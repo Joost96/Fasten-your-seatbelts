@@ -2,9 +2,9 @@ Naam:	Joost
 Mail:		Jjkingma96@gmail.com
 Tel.:		06-23853852
 
-Naam:	Mike 
-Mail:		mvanbronk@live.nl
-Tel.:		06-52840646
+Naam:	Alwin 
+Mail:		alwin-kakit@hotmail.com
+Tel.:		06-16835014
 
 Naam:	Alexander 
 Mail:		lex-herik@hotmail.com
@@ -17,6 +17,10 @@ Tel.:		06-34588145
 Naam:	Mohammed El Kawakibi
 Mail:		melkawakibi@gmail.com
 Tel.:		06-12011160
+
+Naam: Niek Keune
+Mail:		niekkeune@gmail.com
+Tel.:		...
 
 Naam:	Bunyamin 
 Mail:		Bunyamin_54@hotmail.com	
