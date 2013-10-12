@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fasten.your.seatbelt;
+package fasten.your.seatbelt.forms;
 
 /**
  *

@@ -2,19 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fasten.your.seatbelt;
+package fasten.your.seatbelt.forms;
 
 /**
  *
  * @author Joost
  */
-public class SearchScreen extends javax.swing.JFrame
+public class Manager extends javax.swing.JFrame
 {
 
     /**
-     * Creates new form SearchScreen
+     * Creates new form Manager
      */
-    public SearchScreen()
+    public Manager()
     {
         initComponents();
     }
@@ -67,16 +67,16 @@ public class SearchScreen extends javax.swing.JFrame
             }
         } catch (ClassNotFoundException ex)
         {
-            java.util.logging.Logger.getLogger(SearchScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex)
         {
-            java.util.logging.Logger.getLogger(SearchScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex)
         {
-            java.util.logging.Logger.getLogger(SearchScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex)
         {
-            java.util.logging.Logger.getLogger(SearchScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -85,7 +85,7 @@ public class SearchScreen extends javax.swing.JFrame
         {
             public void run()
             {
-                new SearchScreen().setVisible(true);
+                new Manager().setVisible(true);
             }
         });
     }
