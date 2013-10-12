@@ -29,21 +29,177 @@ public class Manager extends javax.swing.JFrame
     private void initComponents()
     {
 
+        Menu = new javax.swing.JPanel();
+        baggageMissing = new javax.swing.JLabel();
+        baggageFound = new javax.swing.JLabel();
+        Logo = new javax.swing.JLabel();
+        topBar = new javax.swing.JPanel();
+        UserName = new javax.swing.JLabel();
+        logoutButton = new javax.swing.JLabel();
+        search = new javax.swing.JLabel();
+        searchBar = new javax.swing.JTextField();
+        whiteBackground = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Menu.setToolTipText("");
+        Menu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Menu.setName("Menu"); // NOI18N
+        Menu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        baggageMissing.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        baggageMissing.setText("Baggage found");
+        baggageMissing.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        baggageMissing.setFocusTraversalPolicyProvider(true);
+        baggageMissing.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        baggageMissing.setName(""); // NOI18N
+        baggageMissing.setPreferredSize(new java.awt.Dimension(100, 40));
+        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                baggageMissingMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                baggageMissingMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
+                baggageMissingMouseReleased(evt);
+            }
+        });
+        Menu.add(baggageMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, -1));
+
+        baggageFound.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        baggageFound.setText("Baggage missing");
+        baggageFound.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        baggageFound.setFocusTraversalPolicyProvider(true);
+        baggageFound.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        baggageFound.setName(""); // NOI18N
+        baggageFound.setPreferredSize(new java.awt.Dimension(100, 40));
+        baggageFound.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                baggageFoundMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                baggageFoundMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                baggageFoundMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
+                baggageFoundMouseReleased(evt);
+            }
+        });
+        Menu.add(baggageFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+
+        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Menu.png"))); // NOI18N
+        Menu.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, -1));
+
+        topBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        UserName.setText("*AccountName*");
+        topBar.add(UserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 10, -1, 30));
+
+        logoutButton.setText("(Logout)");
+        logoutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        topBar.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, -1, 30));
+
+        search.setText("Search:");
+        topBar.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
+
+        searchBar.setPreferredSize(new java.awt.Dimension(8, 20));
+        searchBar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                searchBarActionPerformed(evt);
+            }
+        });
+        topBar.add(searchBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 120, 30));
+
+        whiteBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/TopBar.png"))); // NOI18N
+        topBar.add(whiteBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 900, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, 0)
+                    .addComponent(topBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(topBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void baggageFoundMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMouseClicked
+    {//GEN-HEADEREND:event_baggageFoundMouseClicked
+        bagageMissingPanel.setVisible(true);
+        bagageFoundPanel.setVisible(false);
+        baggageFound.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        baggageMissing.setIcon(null);
+    }//GEN-LAST:event_baggageFoundMouseClicked
+
+    private void baggageFoundMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMouseExited
+    {//GEN-HEADEREND:event_baggageFoundMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_baggageFoundMouseExited
+
+    private void baggageFoundMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMousePressed
+    {//GEN-HEADEREND:event_baggageFoundMousePressed
+        baggageFound.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
+    }//GEN-LAST:event_baggageFoundMousePressed
+
+    private void baggageFoundMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMouseReleased
+    {//GEN-HEADEREND:event_baggageFoundMouseReleased
+        baggageFound.setIcon(null);
+    }//GEN-LAST:event_baggageFoundMouseReleased
+
+    private void searchBarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_searchBarActionPerformed
+    {//GEN-HEADEREND:event_searchBarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchBarActionPerformed
+
+    private void baggageMissingMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageMissingMouseReleased
+    {//GEN-HEADEREND:event_baggageMissingMouseReleased
+        baggageMissing.setIcon(null);
+    }//GEN-LAST:event_baggageMissingMouseReleased
+
+    private void baggageMissingMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageMissingMousePressed
+    {//GEN-HEADEREND:event_baggageMissingMousePressed
+        baggageMissing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
+    }//GEN-LAST:event_baggageMissingMousePressed
+
+    private void baggageMissingMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageMissingMouseClicked
+    {//GEN-HEADEREND:event_baggageMissingMouseClicked
+        bagageMissingPanel.setVisible(false);
+        bagageFoundPanel.setVisible(true);
+        baggageMissing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        baggageFound.setIcon(null);
+    }//GEN-LAST:event_baggageMissingMouseClicked
 
     /**
      * @param args the command line arguments
@@ -90,5 +246,15 @@ public class Manager extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Logo;
+    private javax.swing.JPanel Menu;
+    private javax.swing.JLabel UserName;
+    private javax.swing.JLabel baggageFound;
+    private javax.swing.JLabel baggageMissing;
+    private javax.swing.JLabel logoutButton;
+    private javax.swing.JLabel search;
+    private javax.swing.JTextField searchBar;
+    private javax.swing.JPanel topBar;
+    private javax.swing.JLabel whiteBackground;
     // End of variables declaration//GEN-END:variables
 }

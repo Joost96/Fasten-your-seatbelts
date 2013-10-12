@@ -34,10 +34,87 @@ public class Employ extends javax.swing.JFrame
         logoutButton = new javax.swing.JLabel();
         search = new javax.swing.JLabel();
         searchBar = new javax.swing.JTextField();
+        whiteBackground = new javax.swing.JLabel();
         Menu = new javax.swing.JPanel();
         baggageMissing = new javax.swing.JLabel();
         baggageFound = new javax.swing.JLabel();
         Logo = new javax.swing.JLabel();
+        bagageFoundPanel = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        FoundTable = new javax.swing.JTable();
+        LastFound = new javax.swing.JLabel();
+        NextFound = new javax.swing.JLabel();
+        currentPageFound = new javax.swing.JTextField();
+        PrevFound = new javax.swing.JLabel();
+        FirstFound = new javax.swing.JLabel();
+        EditButtonsFound = new javax.swing.JPanel();
+        Edit25 = new javax.swing.JLabel();
+        Edit31 = new javax.swing.JLabel();
+        Edit32 = new javax.swing.JLabel();
+        Edit33 = new javax.swing.JLabel();
+        Edit34 = new javax.swing.JLabel();
+        Edit35 = new javax.swing.JLabel();
+        Edit36 = new javax.swing.JLabel();
+        Edit37 = new javax.swing.JLabel();
+        Edit38 = new javax.swing.JLabel();
+        Edit39 = new javax.swing.JLabel();
+        Edit40 = new javax.swing.JLabel();
+        Edit41 = new javax.swing.JLabel();
+        Edit42 = new javax.swing.JLabel();
+        Edit43 = new javax.swing.JLabel();
+        Edit44 = new javax.swing.JLabel();
+        Edit45 = new javax.swing.JLabel();
+        Edit46 = new javax.swing.JLabel();
+        Edit47 = new javax.swing.JLabel();
+        Edit48 = new javax.swing.JLabel();
+        Edit49 = new javax.swing.JLabel();
+        Edit50 = new javax.swing.JLabel();
+        Edit51 = new javax.swing.JLabel();
+        Edit52 = new javax.swing.JLabel();
+        Edit53 = new javax.swing.JLabel();
+        Edit54 = new javax.swing.JLabel();
+        Edit55 = new javax.swing.JLabel();
+        Edit56 = new javax.swing.JLabel();
+        Edit57 = new javax.swing.JLabel();
+        Edit58 = new javax.swing.JLabel();
+        bagageMissingPanel = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        missingTable = new javax.swing.JTable();
+        LastMissing = new javax.swing.JLabel();
+        NextMissing = new javax.swing.JLabel();
+        currentPageMissing = new javax.swing.JTextField();
+        PrevMissing = new javax.swing.JLabel();
+        FirstMissing = new javax.swing.JLabel();
+        EditButtonsMissing = new javax.swing.JPanel();
+        Edit1 = new javax.swing.JLabel();
+        Edit2 = new javax.swing.JLabel();
+        Edit4 = new javax.swing.JLabel();
+        Edit3 = new javax.swing.JLabel();
+        Edit5 = new javax.swing.JLabel();
+        Edit6 = new javax.swing.JLabel();
+        Edit7 = new javax.swing.JLabel();
+        Edit8 = new javax.swing.JLabel();
+        Edit9 = new javax.swing.JLabel();
+        Edit10 = new javax.swing.JLabel();
+        Edit11 = new javax.swing.JLabel();
+        Edit12 = new javax.swing.JLabel();
+        Edit13 = new javax.swing.JLabel();
+        Edit14 = new javax.swing.JLabel();
+        Edit15 = new javax.swing.JLabel();
+        Edit16 = new javax.swing.JLabel();
+        Edit17 = new javax.swing.JLabel();
+        Edit18 = new javax.swing.JLabel();
+        Edit19 = new javax.swing.JLabel();
+        Edit20 = new javax.swing.JLabel();
+        Edit21 = new javax.swing.JLabel();
+        Edit22 = new javax.swing.JLabel();
+        Edit23 = new javax.swing.JLabel();
+        Edit24 = new javax.swing.JLabel();
+        Edit26 = new javax.swing.JLabel();
+        Edit27 = new javax.swing.JLabel();
+        Edit28 = new javax.swing.JLabel();
+        Edit29 = new javax.swing.JLabel();
+        Edit30 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -68,6 +145,9 @@ public class Employ extends javax.swing.JFrame
         });
         topBar.add(searchBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 120, 30));
 
+        whiteBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/TopBar.png"))); // NOI18N
+        topBar.add(whiteBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 50));
+
         getContentPane().add(topBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 800, 50));
 
         Menu.setToolTipText("");
@@ -84,6 +164,10 @@ public class Employ extends javax.swing.JFrame
         baggageMissing.setPreferredSize(new java.awt.Dimension(100, 40));
         baggageMissing.addMouseListener(new java.awt.event.MouseAdapter()
         {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                baggageMissingMouseClicked(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt)
             {
                 baggageMissingMousePressed(evt);
@@ -104,6 +188,14 @@ public class Employ extends javax.swing.JFrame
         baggageFound.setPreferredSize(new java.awt.Dimension(100, 40));
         baggageFound.addMouseListener(new java.awt.event.MouseAdapter()
         {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                baggageFoundMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                baggageFoundMouseExited(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt)
             {
                 baggageFoundMousePressed(evt);
@@ -116,11 +208,637 @@ public class Employ extends javax.swing.JFrame
         Menu.add(baggageFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
 
         Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Menu.png"))); // NOI18N
-        Menu.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        Menu.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, -1));
 
         getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         Menu.getAccessibleContext().setAccessibleName("Menu");
         Menu.getAccessibleContext().setAccessibleDescription("");
+
+        bagageFoundPanel.setPreferredSize(new java.awt.Dimension(800, 600));
+        bagageFoundPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FoundTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
+                {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
+                {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String []
+            {
+                "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
+            }
+        )
+        {
+            Class[] types = new Class []
+            {
+                java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean []
+            {
+                true, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex)
+            {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
+                return canEdit [columnIndex];
+            }
+        });
+        FoundTable.setPreferredSize(new java.awt.Dimension(469, 434));
+        FoundTable.setRequestFocusEnabled(false);
+        jScrollPane3.setViewportView(FoundTable);
+        FoundTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        FoundTable.getColumnModel().getColumn(0).setMinWidth(40);
+        FoundTable.getColumnModel().getColumn(0).setPreferredWidth(10);
+        FoundTable.getColumnModel().getColumn(0).setMaxWidth(40);
+        FoundTable.getColumnModel().getColumn(1).setPreferredWidth(30);
+        FoundTable.getColumnModel().getColumn(2).setMinWidth(60);
+        FoundTable.getColumnModel().getColumn(2).setPreferredWidth(20);
+        FoundTable.getColumnModel().getColumn(2).setMaxWidth(60);
+        FoundTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+        FoundTable.getColumnModel().getColumn(4).setPreferredWidth(20);
+        FoundTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+        FoundTable.setRowHeight (15);
+
+        bagageFoundPanel.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 740, 470));
+
+        LastFound.setText("Last");
+        bagageFoundPanel.add(LastFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, -1, 20));
+
+        NextFound.setText("Next");
+        bagageFoundPanel.add(NextFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 500, -1, 20));
+
+        currentPageFound.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        currentPageFound.setText("1");
+        bagageFoundPanel.add(currentPageFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 30, -1));
+
+        PrevFound.setText("Prev");
+        bagageFoundPanel.add(PrevFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, -1, 20));
+
+        FirstFound.setText("First");
+        bagageFoundPanel.add(FirstFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 20));
+
+        Edit25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit25.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit31.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit32.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit33.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit34.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit35.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit36.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit36.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit37.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit38.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit38.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit39.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit40.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit41.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit41.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit42.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit42.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit43.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit44.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit45.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit46.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit47.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit48.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit49.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit50.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit51.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit52.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit53.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit54.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit55.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit56.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit57.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit58.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit58.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        javax.swing.GroupLayout EditButtonsFoundLayout = new javax.swing.GroupLayout(EditButtonsFound);
+        EditButtonsFound.setLayout(EditButtonsFoundLayout);
+        EditButtonsFoundLayout.setHorizontalGroup(
+            EditButtonsFoundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Edit25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        EditButtonsFoundLayout.setVerticalGroup(
+            EditButtonsFoundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditButtonsFoundLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Edit25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        bagageFoundPanel.add(EditButtonsFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 45, -1, -1));
+
+        getContentPane().add(bagageFoundPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
+        bagageFoundPanel.setVisible(false);
+
+        bagageMissingPanel.setPreferredSize(new java.awt.Dimension(800, 600));
+        bagageMissingPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        missingTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
+                {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
+                {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String []
+            {
+                "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
+            }
+        )
+        {
+            Class[] types = new Class []
+            {
+                java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean []
+            {
+                true, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex)
+            {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
+                return canEdit [columnIndex];
+            }
+        });
+        missingTable.setPreferredSize(new java.awt.Dimension(469, 434));
+        missingTable.setRequestFocusEnabled(false);
+        jScrollPane2.setViewportView(missingTable);
+        missingTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        missingTable.getColumnModel().getColumn(0).setMinWidth(40);
+        missingTable.getColumnModel().getColumn(0).setPreferredWidth(10);
+        missingTable.getColumnModel().getColumn(0).setMaxWidth(40);
+        missingTable.getColumnModel().getColumn(1).setPreferredWidth(30);
+        missingTable.getColumnModel().getColumn(2).setMinWidth(60);
+        missingTable.getColumnModel().getColumn(2).setPreferredWidth(20);
+        missingTable.getColumnModel().getColumn(2).setMaxWidth(60);
+        missingTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+        missingTable.getColumnModel().getColumn(4).setPreferredWidth(20);
+        missingTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+        missingTable.setRowHeight (15);
+
+        bagageMissingPanel.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 740, 470));
+
+        LastMissing.setText("Last");
+        bagageMissingPanel.add(LastMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, -1, 20));
+
+        NextMissing.setText("Next");
+        bagageMissingPanel.add(NextMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 500, -1, 20));
+
+        currentPageMissing.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        currentPageMissing.setText("1");
+        bagageMissingPanel.add(currentPageMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 30, -1));
+
+        PrevMissing.setText("Prev");
+        bagageMissingPanel.add(PrevMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, -1, 20));
+
+        FirstMissing.setText("First");
+        bagageMissingPanel.add(FirstMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 20));
+
+        Edit1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit1.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit2.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit4.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit3.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit5.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit6.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit7.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit8.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit9.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit10.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit11.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit12.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit13.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit14.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit15.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit16.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit17.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit18.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit19.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit20.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit21.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit22.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit23.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit24.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit26.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit27.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit28.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit29.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        Edit30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
+        Edit30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Edit30.setPreferredSize(new java.awt.Dimension(15, 15));
+
+        javax.swing.GroupLayout EditButtonsMissingLayout = new javax.swing.GroupLayout(EditButtonsMissing);
+        EditButtonsMissing.setLayout(EditButtonsMissingLayout);
+        EditButtonsMissingLayout.setHorizontalGroup(
+            EditButtonsMissingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Edit1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Edit26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        EditButtonsMissingLayout.setVerticalGroup(
+            EditButtonsMissingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditButtonsMissingLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Edit1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Edit26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        bagageMissingPanel.add(EditButtonsMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 45, -1, -1));
+
+        getContentPane().add(bagageMissingPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
+        bagageMissingPanel.setVisible(false);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -132,8 +850,8 @@ public class Employ extends javax.swing.JFrame
 
     private void baggageMissingMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageMissingMouseReleased
     {//GEN-HEADEREND:event_baggageMissingMouseReleased
-        baggageMissing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
-        baggageFound.setIcon(null);
+        baggageMissing.setIcon(null);
+
     }//GEN-LAST:event_baggageMissingMouseReleased
 
     private void baggageFoundMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMousePressed
@@ -143,15 +861,34 @@ public class Employ extends javax.swing.JFrame
 
     private void baggageFoundMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMouseReleased
     {//GEN-HEADEREND:event_baggageFoundMouseReleased
-        baggageFound.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
-        baggageMissing.setIcon(null);
-        Menu.setVisible(false);
+        baggageFound.setIcon(null);
     }//GEN-LAST:event_baggageFoundMouseReleased
 
     private void searchBarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_searchBarActionPerformed
     {//GEN-HEADEREND:event_searchBarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_searchBarActionPerformed
+
+    private void baggageFoundMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMouseClicked
+    {//GEN-HEADEREND:event_baggageFoundMouseClicked
+        bagageMissingPanel.setVisible(true);
+        bagageFoundPanel.setVisible(false);
+        baggageFound.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        baggageMissing.setIcon(null);
+    }//GEN-LAST:event_baggageFoundMouseClicked
+
+    private void baggageMissingMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageMissingMouseClicked
+    {//GEN-HEADEREND:event_baggageMissingMouseClicked
+        bagageMissingPanel.setVisible(false);
+        bagageFoundPanel.setVisible(true);
+        baggageMissing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        baggageFound.setIcon(null);
+    }//GEN-LAST:event_baggageMissingMouseClicked
+
+    private void baggageFoundMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMouseExited
+    {//GEN-HEADEREND:event_baggageFoundMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_baggageFoundMouseExited
 
     /**
      * @param args the command line arguments
@@ -198,14 +935,91 @@ public class Employ extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Edit1;
+    private javax.swing.JLabel Edit10;
+    private javax.swing.JLabel Edit11;
+    private javax.swing.JLabel Edit12;
+    private javax.swing.JLabel Edit13;
+    private javax.swing.JLabel Edit14;
+    private javax.swing.JLabel Edit15;
+    private javax.swing.JLabel Edit16;
+    private javax.swing.JLabel Edit17;
+    private javax.swing.JLabel Edit18;
+    private javax.swing.JLabel Edit19;
+    private javax.swing.JLabel Edit2;
+    private javax.swing.JLabel Edit20;
+    private javax.swing.JLabel Edit21;
+    private javax.swing.JLabel Edit22;
+    private javax.swing.JLabel Edit23;
+    private javax.swing.JLabel Edit24;
+    private javax.swing.JLabel Edit25;
+    private javax.swing.JLabel Edit26;
+    private javax.swing.JLabel Edit27;
+    private javax.swing.JLabel Edit28;
+    private javax.swing.JLabel Edit29;
+    private javax.swing.JLabel Edit3;
+    private javax.swing.JLabel Edit30;
+    private javax.swing.JLabel Edit31;
+    private javax.swing.JLabel Edit32;
+    private javax.swing.JLabel Edit33;
+    private javax.swing.JLabel Edit34;
+    private javax.swing.JLabel Edit35;
+    private javax.swing.JLabel Edit36;
+    private javax.swing.JLabel Edit37;
+    private javax.swing.JLabel Edit38;
+    private javax.swing.JLabel Edit39;
+    private javax.swing.JLabel Edit4;
+    private javax.swing.JLabel Edit40;
+    private javax.swing.JLabel Edit41;
+    private javax.swing.JLabel Edit42;
+    private javax.swing.JLabel Edit43;
+    private javax.swing.JLabel Edit44;
+    private javax.swing.JLabel Edit45;
+    private javax.swing.JLabel Edit46;
+    private javax.swing.JLabel Edit47;
+    private javax.swing.JLabel Edit48;
+    private javax.swing.JLabel Edit49;
+    private javax.swing.JLabel Edit5;
+    private javax.swing.JLabel Edit50;
+    private javax.swing.JLabel Edit51;
+    private javax.swing.JLabel Edit52;
+    private javax.swing.JLabel Edit53;
+    private javax.swing.JLabel Edit54;
+    private javax.swing.JLabel Edit55;
+    private javax.swing.JLabel Edit56;
+    private javax.swing.JLabel Edit57;
+    private javax.swing.JLabel Edit58;
+    private javax.swing.JLabel Edit6;
+    private javax.swing.JLabel Edit7;
+    private javax.swing.JLabel Edit8;
+    private javax.swing.JLabel Edit9;
+    private javax.swing.JPanel EditButtonsFound;
+    private javax.swing.JPanel EditButtonsMissing;
+    private javax.swing.JLabel FirstFound;
+    private javax.swing.JLabel FirstMissing;
+    private javax.swing.JTable FoundTable;
+    private javax.swing.JLabel LastFound;
+    private javax.swing.JLabel LastMissing;
     private javax.swing.JLabel Logo;
     private javax.swing.JPanel Menu;
+    private javax.swing.JLabel NextFound;
+    private javax.swing.JLabel NextMissing;
+    private javax.swing.JLabel PrevFound;
+    private javax.swing.JLabel PrevMissing;
     private javax.swing.JLabel UserName;
+    private javax.swing.JPanel bagageFoundPanel;
+    private javax.swing.JPanel bagageMissingPanel;
     private javax.swing.JLabel baggageFound;
     private javax.swing.JLabel baggageMissing;
+    private javax.swing.JTextField currentPageFound;
+    private javax.swing.JTextField currentPageMissing;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JLabel logoutButton;
+    private javax.swing.JTable missingTable;
     private javax.swing.JLabel search;
     private javax.swing.JTextField searchBar;
     private javax.swing.JPanel topBar;
+    private javax.swing.JLabel whiteBackground;
     // End of variables declaration//GEN-END:variables
 }
