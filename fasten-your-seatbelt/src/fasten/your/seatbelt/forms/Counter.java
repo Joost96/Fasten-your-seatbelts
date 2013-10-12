@@ -8,13 +8,13 @@ package fasten.your.seatbelt.forms;
  *
  * @author Joost
  */
-public class Employ extends javax.swing.JFrame
+public class Counter extends javax.swing.JFrame
 {
 
     /**
      * Creates new form Side
      */
-    public Employ()
+    public Counter()
     {
         initComponents();
     }
@@ -212,7 +212,6 @@ public class Employ extends javax.swing.JFrame
 
         getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         Menu.getAccessibleContext().setAccessibleName("Menu");
-        Menu.getAccessibleContext().setAccessibleDescription("");
 
         bagageFoundPanel.setPreferredSize(new java.awt.Dimension(800, 600));
         bagageFoundPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -588,6 +587,7 @@ public class Employ extends javax.swing.JFrame
                 return canEdit [columnIndex];
             }
         });
+        missingTable.setColumnSelectionAllowed(true);
         missingTable.setPreferredSize(new java.awt.Dimension(469, 434));
         missingTable.setRequestFocusEnabled(false);
         jScrollPane2.setViewportView(missingTable);
@@ -912,16 +912,16 @@ public class Employ extends javax.swing.JFrame
             }
         } catch (ClassNotFoundException ex)
         {
-            java.util.logging.Logger.getLogger(Employ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Counter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex)
         {
-            java.util.logging.Logger.getLogger(Employ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Counter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex)
         {
-            java.util.logging.Logger.getLogger(Employ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Counter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex)
         {
-            java.util.logging.Logger.getLogger(Employ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Counter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -930,7 +930,7 @@ public class Employ extends javax.swing.JFrame
         {
             public void run()
             {
-                new Employ().setVisible(true);
+                new Counter().setVisible(true);
             }
         });
     }

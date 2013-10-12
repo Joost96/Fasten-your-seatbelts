@@ -1,5 +1,6 @@
 package fasten.your.seatbelt;
 
+import fasten.your.seatbelt.forms.*;
 /**
  *
  * @author Team V
@@ -12,6 +13,7 @@ public class FastenYourSeatbelt
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        LogIn logIn = new LogIn();
+        logIn.setVisible(true);
     }
 }

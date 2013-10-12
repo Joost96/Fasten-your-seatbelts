@@ -39,6 +39,31 @@ public class ApplicationManager extends javax.swing.JFrame
         searchBar = new javax.swing.JTextField();
         whiteBackground = new javax.swing.JLabel();
         accountManagementPanel = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        accounts = new javax.swing.JTable();
+        edit = new javax.swing.JPanel();
+        accountID = new javax.swing.JLabel();
+        firstName = new javax.swing.JLabel();
+        lastName = new javax.swing.JLabel();
+        accountName = new javax.swing.JLabel();
+        accountIdInput = new javax.swing.JTextField();
+        firstNameInput = new javax.swing.JTextField();
+        lastNameInput = new javax.swing.JTextField();
+        accountNameInput = new javax.swing.JTextField();
+        password = new javax.swing.JLabel();
+        passwordInput = new javax.swing.JPasswordField();
+        passwordConfirm = new javax.swing.JLabel();
+        passwordConfirmInput = new javax.swing.JPasswordField();
+        accountTypeInput = new javax.swing.JComboBox();
+        accountType = new javax.swing.JLabel();
+        comment = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        commentInput = new javax.swing.JTextArea();
+        NextAccount = new javax.swing.JLabel();
+        FirstAccount = new javax.swing.JLabel();
+        PrevAccount = new javax.swing.JLabel();
+        LastAccount = new javax.swing.JLabel();
+        currentPageAccount = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -111,15 +136,247 @@ public class ApplicationManager extends javax.swing.JFrame
 
         accountManagementPanel.setPreferredSize(new java.awt.Dimension(800, 600));
 
+        accounts.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String []
+            {
+                "Account ID", "Name", "Account Name", "Account type"
+            }
+        )
+        {
+            Class[] types = new Class []
+            {
+                java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex)
+            {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(accounts);
+
+        edit.setBorder(javax.swing.BorderFactory.createTitledBorder("Edit"));
+
+        accountID.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        accountID.setText("Account ID :");
+
+        firstName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        firstName.setText("First Name :");
+
+        lastName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lastName.setText("Last Name :");
+
+        accountName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        accountName.setText("Account Name :");
+
+        firstNameInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                firstNameInputActionPerformed(evt);
+            }
+        });
+
+        password.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        password.setText("Password :");
+
+        passwordInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                passwordInputActionPerformed(evt);
+            }
+        });
+
+        passwordConfirm.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        passwordConfirm.setText("comfirm password :");
+
+        accountTypeInput.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Counter assistant", "Manager", "Application manager" }));
+        accountTypeInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                accountTypeInputActionPerformed(evt);
+            }
+        });
+
+        accountType.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        accountType.setText("Account type :");
+
+        comment.setText("Comment :");
+
+        commentInput.setColumns(20);
+        commentInput.setRows(5);
+        jScrollPane2.setViewportView(commentInput);
+
+        javax.swing.GroupLayout editLayout = new javax.swing.GroupLayout(edit);
+        edit.setLayout(editLayout);
+        editLayout.setHorizontalGroup(
+            editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(editLayout.createSequentialGroup()
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, editLayout.createSequentialGroup()
+                        .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(editLayout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(accountName, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(accountID, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(passwordInput, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                            .addComponent(accountNameInput)
+                            .addComponent(lastNameInput)
+                            .addComponent(accountIdInput))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(editLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editLayout.createSequentialGroup()
+                                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(passwordConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(accountType, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(accountTypeInput, 0, 200, Short.MAX_VALUE)
+                                    .addComponent(passwordConfirmInput)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editLayout.createSequentialGroup()
+                                .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(firstNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(editLayout.createSequentialGroup()
+                        .addGap(0, 28, Short.MAX_VALUE)
+                        .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(comment, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+        editLayout.setVerticalGroup(
+            editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(editLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(accountID)
+                    .addComponent(accountIdInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(firstName)
+                    .addComponent(firstNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lastNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lastName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(accountNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(accountName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(passwordInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(password))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(passwordConfirm)
+                    .addComponent(passwordConfirmInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(accountType)
+                    .addComponent(accountTypeInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(comment)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(47, Short.MAX_VALUE))
+        );
+
+        NextAccount.setText("Next");
+
+        FirstAccount.setText("First");
+
+        PrevAccount.setText("Prev");
+
+        LastAccount.setText("Last");
+
+        currentPageAccount.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        currentPageAccount.setText("1");
+
         javax.swing.GroupLayout accountManagementPanelLayout = new javax.swing.GroupLayout(accountManagementPanel);
         accountManagementPanel.setLayout(accountManagementPanelLayout);
         accountManagementPanelLayout.setHorizontalGroup(
             accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, accountManagementPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(accountManagementPanelLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, accountManagementPanelLayout.createSequentialGroup()
+                        .addComponent(FirstAccount)
+                        .addGap(9, 9, 9)
+                        .addComponent(PrevAccount)
+                        .addGap(8, 8, 8)
+                        .addComponent(currentPageAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(NextAccount)
+                        .addGap(7, 7, 7)
+                        .addComponent(LastAccount)
+                        .addGap(31, 31, 31))))
         );
         accountManagementPanelLayout.setVerticalGroup(
             accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(accountManagementPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(accountManagementPanelLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(FirstAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PrevAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(currentPageAccount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NextAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LastAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         getContentPane().add(accountManagementPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
@@ -153,6 +410,21 @@ public class ApplicationManager extends javax.swing.JFrame
     {//GEN-HEADEREND:event_searchBarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_searchBarActionPerformed
+
+    private void accountTypeInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_accountTypeInputActionPerformed
+    {//GEN-HEADEREND:event_accountTypeInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_accountTypeInputActionPerformed
+
+    private void passwordInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_passwordInputActionPerformed
+    {//GEN-HEADEREND:event_passwordInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordInputActionPerformed
+
+    private void firstNameInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_firstNameInputActionPerformed
+    {//GEN-HEADEREND:event_firstNameInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_firstNameInputActionPerformed
 
     /**
      * @param args the command line arguments
@@ -199,12 +471,37 @@ public class ApplicationManager extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel FirstAccount;
+    private javax.swing.JLabel LastAccount;
     private javax.swing.JLabel Logo;
     private javax.swing.JPanel Menu;
+    private javax.swing.JLabel NextAccount;
+    private javax.swing.JLabel PrevAccount;
     private javax.swing.JLabel UserName;
+    private javax.swing.JLabel accountID;
+    private javax.swing.JTextField accountIdInput;
     private javax.swing.JLabel accountManagement;
     private javax.swing.JPanel accountManagementPanel;
+    private javax.swing.JLabel accountName;
+    private javax.swing.JTextField accountNameInput;
+    private javax.swing.JLabel accountType;
+    private javax.swing.JComboBox accountTypeInput;
+    private javax.swing.JTable accounts;
+    private javax.swing.JLabel comment;
+    private javax.swing.JTextArea commentInput;
+    private javax.swing.JTextField currentPageAccount;
+    private javax.swing.JPanel edit;
+    private javax.swing.JLabel firstName;
+    private javax.swing.JTextField firstNameInput;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lastName;
+    private javax.swing.JTextField lastNameInput;
     private javax.swing.JLabel logoutButton;
+    private javax.swing.JLabel password;
+    private javax.swing.JLabel passwordConfirm;
+    private javax.swing.JPasswordField passwordConfirmInput;
+    private javax.swing.JPasswordField passwordInput;
     private javax.swing.JLabel search;
     private javax.swing.JTextField searchBar;
     private javax.swing.JPanel topBar;
