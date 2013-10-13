@@ -285,7 +285,7 @@ public class ApplicationManager extends javax.swing.JFrame
                         .addGap(0, 28, Short.MAX_VALUE)
                         .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comment, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(comment, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(55, Short.MAX_VALUE))
         );
         editLayout.setVerticalGroup(
