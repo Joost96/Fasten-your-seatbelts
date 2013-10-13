@@ -31,6 +31,7 @@ public class ApplicationManager extends javax.swing.JFrame
 
         Menu = new javax.swing.JPanel();
         accountManagement = new javax.swing.JLabel();
+        options = new javax.swing.JLabel();
         Logo = new javax.swing.JLabel();
         topBar = new javax.swing.JPanel();
         UserName = new javax.swing.JLabel();
@@ -64,6 +65,12 @@ public class ApplicationManager extends javax.swing.JFrame
         PrevAccount = new javax.swing.JLabel();
         LastAccount = new javax.swing.JLabel();
         currentPageAccount = new javax.swing.JTextField();
+        optionsPanel = new javax.swing.JPanel();
+        password1 = new javax.swing.JLabel();
+        confirmPassword = new javax.swing.JLabel();
+        passwordInput1 = new javax.swing.JPasswordField();
+        confirmPasswordInput = new javax.swing.JPasswordField();
+        savePassword = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -101,6 +108,34 @@ public class ApplicationManager extends javax.swing.JFrame
             }
         });
         Menu.add(accountManagement, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+
+        options.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        options.setText("Options");
+        options.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        options.setFocusTraversalPolicyProvider(true);
+        options.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        options.setName(""); // NOI18N
+        options.setPreferredSize(new java.awt.Dimension(100, 40));
+        options.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                optionsMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                optionsMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                optionsMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
+                optionsMouseReleased(evt);
+            }
+        });
+        Menu.add(options, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, -1));
 
         Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Menu.png"))); // NOI18N
         Menu.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, -1));
@@ -187,8 +222,6 @@ public class ApplicationManager extends javax.swing.JFrame
             }
         });
         jScrollPane1.setViewportView(accounts);
-
-        edit.setBorder(javax.swing.BorderFactory.createTitledBorder("Edit"));
 
         accountID.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         accountID.setText("Account ID :");
@@ -282,11 +315,11 @@ public class ApplicationManager extends javax.swing.JFrame
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(firstNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(editLayout.createSequentialGroup()
-                        .addGap(0, 28, Short.MAX_VALUE)
+                        .addGap(0, 34, Short.MAX_VALUE)
                         .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(comment, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         editLayout.setVerticalGroup(
             editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -382,13 +415,69 @@ public class ApplicationManager extends javax.swing.JFrame
         getContentPane().add(accountManagementPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
         accountManagementPanel.setVisible(false);
 
+        password1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        password1.setText("Password :");
+
+        confirmPassword.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        confirmPassword.setText("Confirm Password :");
+
+        savePassword.setText("Save Password");
+        savePassword.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                savePasswordActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout optionsPanelLayout = new javax.swing.GroupLayout(optionsPanel);
+        optionsPanel.setLayout(optionsPanelLayout);
+        optionsPanelLayout.setHorizontalGroup(
+            optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(optionsPanelLayout.createSequentialGroup()
+                .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(optionsPanelLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(confirmPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
+                            .addComponent(password1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(passwordInput1, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                            .addComponent(confirmPasswordInput)))
+                    .addGroup(optionsPanelLayout.createSequentialGroup()
+                        .addGap(250, 250, 250)
+                        .addComponent(savePassword)))
+                .addContainerGap(445, Short.MAX_VALUE))
+        );
+        optionsPanelLayout.setVerticalGroup(
+            optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(optionsPanelLayout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(password1)
+                    .addComponent(passwordInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(confirmPassword)
+                    .addComponent(confirmPasswordInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(savePassword)
+                .addContainerGap(435, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(optionsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
+        optionsPanel.setVisible(false);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void accountManagementMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_accountManagementMouseClicked
     {//GEN-HEADEREND:event_accountManagementMouseClicked
         accountManagementPanel.setVisible(true);
+        optionsPanel.setVisible(false);
         accountManagement.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        options.setIcon(null);
     }//GEN-LAST:event_accountManagementMouseClicked
 
     private void accountManagementMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_accountManagementMouseExited
@@ -425,6 +514,34 @@ public class ApplicationManager extends javax.swing.JFrame
     {//GEN-HEADEREND:event_firstNameInputActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_firstNameInputActionPerformed
+
+    private void optionsMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_optionsMouseClicked
+    {//GEN-HEADEREND:event_optionsMouseClicked
+        accountManagementPanel.setVisible(false);
+        optionsPanel.setVisible(true);
+        accountManagement.setIcon(null);
+        options.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+    }//GEN-LAST:event_optionsMouseClicked
+
+    private void optionsMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_optionsMouseExited
+    {//GEN-HEADEREND:event_optionsMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_optionsMouseExited
+
+    private void optionsMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_optionsMousePressed
+    {//GEN-HEADEREND:event_optionsMousePressed
+        options.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
+    }//GEN-LAST:event_optionsMousePressed
+
+    private void optionsMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_optionsMouseReleased
+    {//GEN-HEADEREND:event_optionsMouseReleased
+        options.setIcon(null);
+    }//GEN-LAST:event_optionsMouseReleased
+
+    private void savePasswordActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_savePasswordActionPerformed
+    {//GEN-HEADEREND:event_savePasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_savePasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -489,6 +606,8 @@ public class ApplicationManager extends javax.swing.JFrame
     private javax.swing.JTable accounts;
     private javax.swing.JLabel comment;
     private javax.swing.JTextArea commentInput;
+    private javax.swing.JLabel confirmPassword;
+    private javax.swing.JPasswordField confirmPasswordInput;
     private javax.swing.JTextField currentPageAccount;
     private javax.swing.JPanel edit;
     private javax.swing.JLabel firstName;
@@ -498,10 +617,15 @@ public class ApplicationManager extends javax.swing.JFrame
     private javax.swing.JLabel lastName;
     private javax.swing.JTextField lastNameInput;
     private javax.swing.JLabel logoutButton;
+    private javax.swing.JLabel options;
+    private javax.swing.JPanel optionsPanel;
     private javax.swing.JLabel password;
+    private javax.swing.JLabel password1;
     private javax.swing.JLabel passwordConfirm;
     private javax.swing.JPasswordField passwordConfirmInput;
     private javax.swing.JPasswordField passwordInput;
+    private javax.swing.JPasswordField passwordInput1;
+    private javax.swing.JButton savePassword;
     private javax.swing.JLabel search;
     private javax.swing.JTextField searchBar;
     private javax.swing.JPanel topBar;

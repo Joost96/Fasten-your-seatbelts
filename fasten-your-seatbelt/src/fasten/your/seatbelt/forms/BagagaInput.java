@@ -8,12 +8,14 @@ package jframe;
  *
  * @author Hokaki
  */
-public class Bagage extends javax.swing.JFrame {
+public class BagagaInput extends javax.swing.JFrame
+{
 
     /**
-     * Creates new form Bagage
+     * Creates new form BagagaInput
      */
-    public Bagage() {
+    public BagagaInput()
+    {
         initComponents();
     }
 
@@ -28,9 +30,9 @@ public class Bagage extends javax.swing.JFrame {
     {
 
         jLabel7 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        name = new javax.swing.JLabel();
-        nameInput = new javax.swing.JTextField();
+        bagageInput = new javax.swing.JPanel();
+        custemerId = new javax.swing.JLabel();
+        custmereIdInput = new javax.swing.JTextField();
         pnr = new javax.swing.JLabel();
         pnrInput = new javax.swing.JTextField();
         status = new javax.swing.JLabel();
@@ -45,13 +47,11 @@ public class Bagage extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        discreptionpanel = new javax.swing.JPanel();
         sizeInput = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -61,7 +61,7 @@ public class Bagage extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         size = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        locationPanel = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
@@ -74,14 +74,15 @@ public class Bagage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bagageInput.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        name.setText("Name");
-        jPanel1.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 14, -1, -1));
-        jPanel1.add(nameInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 11, 120, -1));
+        custemerId.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        custemerId.setText("Custemer ID");
+        bagageInput.add(custemerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 14, 70, -1));
+        bagageInput.add(custmereIdInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 11, 120, -1));
 
         pnr.setText("PNR");
-        jPanel1.add(pnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 46, -1, -1));
+        bagageInput.add(pnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 46, -1, -1));
 
         pnrInput.addActionListener(new java.awt.event.ActionListener()
         {
@@ -90,10 +91,10 @@ public class Bagage extends javax.swing.JFrame {
                 pnrInputActionPerformed(evt);
             }
         });
-        jPanel1.add(pnrInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 43, 120, -1));
+        bagageInput.add(pnrInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 43, 120, -1));
 
         status.setText("Status");
-        jPanel1.add(status, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 72, -1, -1));
+        bagageInput.add(status, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 72, -1, -1));
 
         statusInput.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Missing", "Found"}));
         statusInput.addActionListener(new java.awt.event.ActionListener()
@@ -103,19 +104,15 @@ public class Bagage extends javax.swing.JFrame {
                 statusInputActionPerformed(evt);
             }
         });
-        jPanel1.add(statusInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 69, 120, -1));
+        bagageInput.add(statusInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 69, 120, -1));
 
         Add.setText("Add");
         Add.setPreferredSize(new java.awt.Dimension(71, 23));
-        jPanel1.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 477, 81, -1));
+        bagageInput.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 477, 81, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][]
             {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
                 {null, null, null, null, null}
             },
             new String []
@@ -134,11 +131,13 @@ public class Bagage extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
+        jTable1.setMinimumSize(new java.awt.Dimension(75, 18));
+        jTable1.setPreferredSize(new java.awt.Dimension(475, 18));
         jScrollPane1.setViewportView(jTable1);
         jTable1.getColumnModel().getColumn(1).setMaxWidth(50);
         jTable1.getColumnModel().getColumn(4).setPreferredWidth(200);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 760, 110));
+        bagageInput.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 760, 50));
 
         Destination.addActionListener(new java.awt.event.ActionListener()
         {
@@ -147,7 +146,7 @@ public class Bagage extends javax.swing.JFrame {
                 DestinationActionPerformed(evt);
             }
         });
-        jPanel1.add(Destination, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 194, 120, -1));
+        bagageInput.add(Destination, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 194, 120, -1));
 
         jTextField4.addActionListener(new java.awt.event.ActionListener()
         {
@@ -156,7 +155,7 @@ public class Bagage extends javax.swing.JFrame {
                 jTextField4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 125, 40, -1));
+        bagageInput.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 125, 40, -1));
 
         jTextField9.addActionListener(new java.awt.event.ActionListener()
         {
@@ -165,37 +164,33 @@ public class Bagage extends javax.swing.JFrame {
                 jTextField9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 163, 120, -1));
+        bagageInput.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 163, 120, -1));
 
         flightNr.setText("Flight nr.");
-        jPanel1.add(flightNr, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 166, -1, -1));
+        bagageInput.add(flightNr, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 166, -1, -1));
 
         jButton4.setText("Refresh");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(718, 477, 80, -1));
+        bagageInput.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(718, 477, 80, -1));
 
         jLabel13.setText("Destination");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 194, -1, -1));
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 37, -1, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 95, 120, -1));
+        bagageInput.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 194, -1, -1));
+        bagageInput.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 37, -1, -1));
 
         jLabel8.setText("mm-dd-yyyy");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
+        bagageInput.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
 
         jButton2.setText("Delete");
         jButton2.setPreferredSize(new java.awt.Dimension(71, 23));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 477, 73, -1));
+        bagageInput.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 477, 73, -1));
 
         jButton3.setText("Save");
         jButton3.setPreferredSize(new java.awt.Dimension(71, 23));
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(567, 477, 82, -1));
+        bagageInput.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(567, 477, 82, -1));
 
         jLabel5.setText("Date");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 128, 37, -1));
+        bagageInput.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 128, 37, -1));
 
-        jLabel4.setText("Name");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 98, -1, -1));
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Discription"));
+        discreptionpanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Discription"));
 
         sizeInput.addActionListener(new java.awt.event.ActionListener()
         {
@@ -236,44 +231,44 @@ public class Bagage extends javax.swing.JFrame {
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText("Colour :");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout discreptionpanelLayout = new javax.swing.GroupLayout(discreptionpanel);
+        discreptionpanel.setLayout(discreptionpanelLayout);
+        discreptionpanelLayout.setHorizontalGroup(
+            discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, discreptionpanelLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(size, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(sizeInput, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
                     .addComponent(jTextField3)
                     .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(55, 55, 55))
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(discreptionpanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(discreptionpanelLayout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        discreptionpanelLayout.setVerticalGroup(
+            discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(discreptionpanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sizeInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(size))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9))
                 .addGap(13, 13, 13)
@@ -283,7 +278,7 @@ public class Bagage extends javax.swing.JFrame {
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 270, 290));
+        bagageInput.add(discreptionpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 270, 290));
 
         jLabel11.setText("Location :");
 
@@ -291,22 +286,22 @@ public class Bagage extends javax.swing.JFrame {
         jTextArea2.setRows(2);
         jScrollPane3.setViewportView(jTextArea2);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout locationPanelLayout = new javax.swing.GroupLayout(locationPanel);
+        locationPanel.setLayout(locationPanelLayout);
+        locationPanelLayout.setHorizontalGroup(
+            locationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(locationPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(locationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(locationPanelLayout.createSequentialGroup()
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 219, Short.MAX_VALUE))
                     .addComponent(jScrollPane3))
                 .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        locationPanelLayout.setVerticalGroup(
+            locationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(locationPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -314,7 +309,8 @@ public class Bagage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 310, -1));
+        bagageInput.add(locationPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 310, -1));
+        locationPanel.setVisible(false);
 
         jTextField8.addActionListener(new java.awt.event.ActionListener()
         {
@@ -323,15 +319,15 @@ public class Bagage extends javax.swing.JFrame {
                 jTextField8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 125, 30, -1));
+        bagageInput.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 125, 30, -1));
 
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("-");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 125, 10, 20));
+        bagageInput.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 125, 10, 20));
 
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("-");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 125, 10, 20));
+        bagageInput.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 125, 10, 20));
 
         jTextField10.addActionListener(new java.awt.event.ActionListener()
         {
@@ -340,17 +336,17 @@ public class Bagage extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 125, 30, -1));
+        bagageInput.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 125, 30, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(bagageInput, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
+            .addComponent(bagageInput, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
         );
 
         pack();
@@ -365,7 +361,13 @@ public class Bagage extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void statusInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusInputActionPerformed
-           // TODO add your handling code here:
+        if ((String) statusInput.getSelectedItem() == ("Found"))
+        {
+            locationPanel.setVisible(true);
+        } else
+        {
+            locationPanel.setVisible(false);
+        }
     }//GEN-LAST:event_statusInputActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -402,40 +404,54 @@ public class Bagage extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+        try
+        {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
+            {
+                if ("Nimbus".equals(info.getName()))
+                {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Bagage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Bagage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Bagage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Bagage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex)
+        {
+            java.util.logging.Logger.getLogger(BagagaInput.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex)
+        {
+            java.util.logging.Logger.getLogger(BagagaInput.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex)
+        {
+            java.util.logging.Logger.getLogger(BagagaInput.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex)
+        {
+            java.util.logging.Logger.getLogger(BagagaInput.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Bagage().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable()
+        {
+            public void run()
+            {
+                new BagagaInput().setVisible(true);
             }
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Add;
     private javax.swing.JTextField Destination;
+    private javax.swing.JPanel bagageInput;
+    private javax.swing.JLabel custemerId;
+    private javax.swing.JTextField custmereIdInput;
+    private javax.swing.JPanel discreptionpanel;
     private javax.swing.JLabel flightNr;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -446,15 +462,11 @@ public class Bagage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -462,14 +474,12 @@ public class Bagage extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
-    private javax.swing.JLabel name;
-    private javax.swing.JTextField nameInput;
+    private javax.swing.JPanel locationPanel;
     private javax.swing.JLabel pnr;
     private javax.swing.JTextField pnrInput;
     private javax.swing.JLabel size;
