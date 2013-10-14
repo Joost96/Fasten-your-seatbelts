@@ -4,7 +4,7 @@ import fasten.your.seatbelt.forms.*;
 
 /**
  *
- * @author Team V
+ * @author Team 5
  */
 public class FastenYourSeatbelt
 {
