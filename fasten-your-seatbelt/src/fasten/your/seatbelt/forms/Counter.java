@@ -26,8 +26,7 @@ public class Counter extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         topBar = new javax.swing.JPanel();
         UserName = new javax.swing.JLabel();
@@ -265,10 +264,8 @@ public class Counter extends javax.swing.JFrame
 
         logoutButton.setText("(Logout)");
         logoutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        logoutButton.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        logoutButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 logoutButtonMouseClicked(evt);
             }
         });
@@ -278,10 +275,8 @@ public class Counter extends javax.swing.JFrame
         topBar.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
 
         searchBar.setPreferredSize(new java.awt.Dimension(8, 20));
-        searchBar.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        searchBar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchBarActionPerformed(evt);
             }
         });
@@ -298,52 +293,43 @@ public class Counter extends javax.swing.JFrame
         Menu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         baggageMissing.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        baggageMissing.setText("Baggage missing");
+        baggageMissing.setText("Bagage missing");
         baggageMissing.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         baggageMissing.setFocusTraversalPolicyProvider(true);
         baggageMissing.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         baggageMissing.setName(""); // NOI18N
         baggageMissing.setPreferredSize(new java.awt.Dimension(100, 40));
-        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 baggageMissingMouseClicked(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt)
-            {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
                 baggageMissingMouseExited(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 baggageMissingMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 baggageMissingMouseReleased(evt);
             }
         });
         Menu.add(baggageMissing, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
 
         baggageFound.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        baggageFound.setText("Baggage found");
+        baggageFound.setText("Bagage found");
         baggageFound.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         baggageFound.setFocusTraversalPolicyProvider(true);
         baggageFound.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         baggageFound.setName(""); // NOI18N
         baggageFound.setPreferredSize(new java.awt.Dimension(100, 40));
-        baggageFound.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        baggageFound.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 baggageFoundMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 baggageFoundMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 baggageFoundMouseReleased(evt);
             }
         });
@@ -356,18 +342,14 @@ public class Counter extends javax.swing.JFrame
         custemers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         custemers.setName(""); // NOI18N
         custemers.setPreferredSize(new java.awt.Dimension(100, 40));
-        custemers.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        custemers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 custemersMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 custemersMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 custemersMouseReleased(evt);
             }
         });
@@ -380,22 +362,17 @@ public class Counter extends javax.swing.JFrame
         newCustemer.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         newCustemer.setName(""); // NOI18N
         newCustemer.setPreferredSize(new java.awt.Dimension(100, 40));
-        newCustemer.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        newCustemer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 newCustemerMouseClicked(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt)
-            {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
                 newCustemerMouseExited(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 newCustemerMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 newCustemerMouseReleased(evt);
             }
         });
@@ -408,18 +385,14 @@ public class Counter extends javax.swing.JFrame
         newBagage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         newBagage.setName(""); // NOI18N
         newBagage.setPreferredSize(new java.awt.Dimension(100, 40));
-        newBagage.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        newBagage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 newBagageMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 newBagageMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 newBagageMouseReleased(evt);
             }
         });
@@ -432,18 +405,14 @@ public class Counter extends javax.swing.JFrame
         options.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         options.setName(""); // NOI18N
         options.setPreferredSize(new java.awt.Dimension(100, 40));
-        options.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        options.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 optionsMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 optionsMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 optionsMouseReleased(evt);
             }
         });
@@ -465,10 +434,8 @@ public class Counter extends javax.swing.JFrame
         pnr.setText("PNR");
         bagageInputPanel.add(pnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
 
-        pnrInput.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        pnrInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pnrInputActionPerformed(evt);
             }
         });
@@ -478,10 +445,8 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(status, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, -1, -1));
 
         statusInput.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Missing", "Found"}));
-        statusInput.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        statusInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 statusInputActionPerformed(evt);
             }
         });
@@ -492,23 +457,18 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 81, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 {null, null, null, null, null}
             },
-            new String []
-            {
+            new String [] {
                 "PNR", "Status", "Customer nr.", "Date", "Description"
             }
-        )
-        {
-            Class[] types = new Class []
-            {
+        ) {
+            Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class
             };
 
-            public Class getColumnClass(int columnIndex)
-            {
+            public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
@@ -518,28 +478,22 @@ public class Counter extends javax.swing.JFrame
 
         bagageInputPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 760, 50));
 
-        Destination.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Destination.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DestinationActionPerformed(evt);
             }
         });
         bagageInputPanel.add(Destination, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 120, -1));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
             }
         });
         bagageInputPanel.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 40, -1));
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField9ActionPerformed(evt);
             }
         });
@@ -571,18 +525,14 @@ public class Counter extends javax.swing.JFrame
 
         discreptionpanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Discription"));
 
-        sizeInput.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        sizeInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sizeInputActionPerformed(evt);
             }
         });
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
             }
         });
@@ -590,10 +540,8 @@ public class Counter extends javax.swing.JFrame
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel10.setText("Brand :");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
@@ -691,10 +639,8 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(locationPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 310, -1));
         locationPanel.setVisible(false);
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField8ActionPerformed(evt);
             }
         });
@@ -708,10 +654,8 @@ public class Counter extends javax.swing.JFrame
         jLabel17.setText("-");
         bagageInputPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 10, 20));
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField10ActionPerformed(evt);
             }
         });
@@ -732,10 +676,8 @@ public class Counter extends javax.swing.JFrame
 
         jLabel15.setText("Document No.");
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
             }
         });
@@ -748,10 +690,8 @@ public class Counter extends javax.swing.JFrame
 
         jLabel21.setText("BSN");
 
-        jTextField15.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField15ActionPerformed(evt);
             }
         });
@@ -759,27 +699,22 @@ public class Counter extends javax.swing.JFrame
         jLabel22.setText("1");
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 { new Boolean(true), null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String []
-            {
+            new String [] {
                 "Select", "PNR", "Status", "Customer nr.", "Date", "Description"
             }
-        )
-        {
-            Class[] types = new Class []
-            {
+        ) {
+            Class[] types = new Class [] {
                 java.lang.Boolean.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
             };
 
-            public Class getColumnClass(int columnIndex)
-            {
+            public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
@@ -787,10 +722,8 @@ public class Counter extends javax.swing.JFrame
 
         jLabel23.setText("Residence");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
@@ -800,19 +733,15 @@ public class Counter extends javax.swing.JFrame
 
         jButton5.setText("Delete");
         jButton5.setPreferredSize(new java.awt.Dimension(71, 23));
-        jButton5.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
         jButton6.setText("Refresh");
-        jButton6.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
@@ -828,10 +757,8 @@ public class Counter extends javax.swing.JFrame
 
         jLabel27.setText("Date");
 
-        jTextField19.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField19ActionPerformed(evt);
             }
         });
@@ -839,10 +766,8 @@ public class Counter extends javax.swing.JFrame
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("-");
 
-        jTextField20.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField20ActionPerformed(evt);
             }
         });
@@ -850,20 +775,16 @@ public class Counter extends javax.swing.JFrame
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("-");
 
-        jTextField21.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField21ActionPerformed(evt);
             }
         });
 
         jLabel30.setText("mm-dd-yyyy");
 
-        jTextField22.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField22ActionPerformed(evt);
             }
         });
@@ -871,10 +792,8 @@ public class Counter extends javax.swing.JFrame
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel31.setText("-");
 
-        jTextField23.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField23ActionPerformed(evt);
             }
         });
@@ -882,10 +801,8 @@ public class Counter extends javax.swing.JFrame
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel32.setText("-");
 
-        jTextField24.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField24ActionPerformed(evt);
             }
         });
@@ -1124,8 +1041,7 @@ public class Counter extends javax.swing.JFrame
         bagageFoundPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FoundTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
                 {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
                 {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
@@ -1156,28 +1072,22 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String []
-            {
+            new String [] {
                 "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
             }
-        )
-        {
-            Class[] types = new Class []
-            {
+        ) {
+            Class[] types = new Class [] {
                 java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean []
-            {
+            boolean[] canEdit = new boolean [] {
                 true, false, false, false, false, false
             };
 
-            public Class getColumnClass(int columnIndex)
-            {
+            public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex)
-            {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
@@ -1437,8 +1347,7 @@ public class Counter extends javax.swing.JFrame
         bagageMissingPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         missingTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
                 {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
                 {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
@@ -1469,28 +1378,22 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String []
-            {
+            new String [] {
                 "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
             }
-        )
-        {
-            Class[] types = new Class []
-            {
+        ) {
+            Class[] types = new Class [] {
                 java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean []
-            {
+            boolean[] canEdit = new boolean [] {
                 true, false, false, false, false, false
             };
 
-            public Class getColumnClass(int columnIndex)
-            {
+            public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex)
-            {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
@@ -1756,10 +1659,8 @@ public class Counter extends javax.swing.JFrame
         confirmPassword.setText("Confirm Password :");
 
         savePassword.setText("Save Password");
-        savePassword.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        savePassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 savePasswordActionPerformed(evt);
             }
         });
@@ -1814,10 +1715,8 @@ public class Counter extends javax.swing.JFrame
 
         currentPageCustemer.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         currentPageCustemer.setText("1");
-        currentPageCustemer.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        currentPageCustemer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 currentPageCustemerActionPerformed(evt);
             }
         });
@@ -2045,8 +1944,7 @@ public class Counter extends javax.swing.JFrame
         custemerPanel.add(EditButtonsCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 45, -1, -1));
 
         custemersOverview.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -2077,8 +1975,7 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null}
             },
-            new String []
-            {
+            new String [] {
                 "Customer ID", "Nationality", "First name", "Surname", "Birthday", "Document nr.", "Telephone number", "Adres", "Zipcode", "City name", "E-mail"
             }
         ));
