@@ -37,6 +37,7 @@ public class FastenYourSeatbelt
         {
             java.util.logging.Logger.getLogger(LogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        
         LogIn logIn = new LogIn();
         logIn.setVisible(true);
     }

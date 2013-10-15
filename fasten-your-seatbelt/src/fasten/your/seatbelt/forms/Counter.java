@@ -26,7 +26,8 @@ public class Counter extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         topBar = new javax.swing.JPanel();
         UserName = new javax.swing.JLabel();
@@ -37,8 +38,8 @@ public class Counter extends javax.swing.JFrame
         Menu = new javax.swing.JPanel();
         baggageMissing = new javax.swing.JLabel();
         baggageFound = new javax.swing.JLabel();
-        custemers = new javax.swing.JLabel();
-        newCustemer = new javax.swing.JLabel();
+        customers = new javax.swing.JLabel();
+        newCustomer = new javax.swing.JLabel();
         newBagage = new javax.swing.JLabel();
         options = new javax.swing.JLabel();
         Logo = new javax.swing.JLabel();
@@ -81,7 +82,7 @@ public class Counter extends javax.swing.JFrame
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
-        custemerInputPanel = new javax.swing.JPanel();
+        customerInputPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -206,12 +207,13 @@ public class Counter extends javax.swing.JFrame
         Edit29 = new javax.swing.JLabel();
         Edit30 = new javax.swing.JLabel();
         optionsPanel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        savePassword = new javax.swing.JButton();
+        confirmPasswordInput = new javax.swing.JPasswordField();
+        passwordInput = new javax.swing.JPasswordField();
         password = new javax.swing.JLabel();
         confirmPassword = new javax.swing.JLabel();
-        passwordInput = new javax.swing.JPasswordField();
-        confirmPasswordInput = new javax.swing.JPasswordField();
-        savePassword = new javax.swing.JButton();
-        custemerPanel = new javax.swing.JPanel();
+        customerPanel = new javax.swing.JPanel();
         LastCustemer = new javax.swing.JLabel();
         NextCustemer = new javax.swing.JLabel();
         currentPageCustemer = new javax.swing.JTextField();
@@ -249,11 +251,15 @@ public class Counter extends javax.swing.JFrame
         Edit87 = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
         custemersOverview = new javax.swing.JTable();
+        Background = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setLocationByPlatform(true);
         setMinimumSize(new java.awt.Dimension(900, 600));
+        setPreferredSize(new java.awt.Dimension(900, 650));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -264,8 +270,10 @@ public class Counter extends javax.swing.JFrame
 
         logoutButton.setText("(Logout)");
         logoutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        logoutButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        logoutButton.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 logoutButtonMouseClicked(evt);
             }
         });
@@ -275,8 +283,10 @@ public class Counter extends javax.swing.JFrame
         topBar.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
 
         searchBar.setPreferredSize(new java.awt.Dimension(8, 20));
-        searchBar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        searchBar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 searchBarActionPerformed(evt);
             }
         });
@@ -299,17 +309,22 @@ public class Counter extends javax.swing.JFrame
         baggageMissing.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         baggageMissing.setName(""); // NOI18N
         baggageMissing.setPreferredSize(new java.awt.Dimension(100, 40));
-        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMouseClicked(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMouseExited(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMouseReleased(evt);
             }
         });
@@ -322,61 +337,74 @@ public class Counter extends javax.swing.JFrame
         baggageFound.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         baggageFound.setName(""); // NOI18N
         baggageFound.setPreferredSize(new java.awt.Dimension(100, 40));
-        baggageFound.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        baggageFound.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 baggageFoundMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 baggageFoundMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 baggageFoundMouseReleased(evt);
             }
         });
         Menu.add(baggageFound, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, -1));
 
-        custemers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        custemers.setText("Custemers");
-        custemers.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        custemers.setFocusTraversalPolicyProvider(true);
-        custemers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        custemers.setName(""); // NOI18N
-        custemers.setPreferredSize(new java.awt.Dimension(100, 40));
-        custemers.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                custemersMouseClicked(evt);
+        customers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        customers.setText("Customers");
+        customers.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        customers.setFocusTraversalPolicyProvider(true);
+        customers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        customers.setName(""); // NOI18N
+        customers.setPreferredSize(new java.awt.Dimension(100, 40));
+        customers.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                customersMousePressed(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                custemersMousePressed(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                customersMouseClicked(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                custemersMouseReleased(evt);
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
+                customersMouseReleased(evt);
             }
         });
-        Menu.add(custemers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, -1, -1));
+        Menu.add(customers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, -1, -1));
 
-        newCustemer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        newCustemer.setText("New Custemer");
-        newCustemer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        newCustemer.setFocusTraversalPolicyProvider(true);
-        newCustemer.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        newCustemer.setName(""); // NOI18N
-        newCustemer.setPreferredSize(new java.awt.Dimension(100, 40));
-        newCustemer.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                newCustemerMouseClicked(evt);
+        newCustomer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        newCustomer.setText("New Customer");
+        newCustomer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        newCustomer.setFocusTraversalPolicyProvider(true);
+        newCustomer.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        newCustomer.setName(""); // NOI18N
+        newCustomer.setPreferredSize(new java.awt.Dimension(100, 40));
+        newCustomer.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                newCustomerMousePressed(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                newCustemerMouseExited(evt);
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                newCustomerMouseExited(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                newCustemerMousePressed(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                newCustomerMouseClicked(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                newCustemerMouseReleased(evt);
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
+                newCustomerMouseReleased(evt);
             }
         });
-        Menu.add(newCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, -1, -1));
+        Menu.add(newCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, -1, -1));
 
         newBagage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         newBagage.setText("New Bagage");
@@ -385,14 +413,18 @@ public class Counter extends javax.swing.JFrame
         newBagage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         newBagage.setName(""); // NOI18N
         newBagage.setPreferredSize(new java.awt.Dimension(100, 40));
-        newBagage.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        newBagage.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 newBagageMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 newBagageMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 newBagageMouseReleased(evt);
             }
         });
@@ -405,14 +437,18 @@ public class Counter extends javax.swing.JFrame
         options.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         options.setName(""); // NOI18N
         options.setPreferredSize(new java.awt.Dimension(100, 40));
-        options.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        options.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 optionsMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 optionsMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 optionsMouseReleased(evt);
             }
         });
@@ -434,8 +470,10 @@ public class Counter extends javax.swing.JFrame
         pnr.setText("PNR");
         bagageInputPanel.add(pnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
 
-        pnrInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        pnrInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 pnrInputActionPerformed(evt);
             }
         });
@@ -445,8 +483,10 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(status, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, -1, -1));
 
         statusInput.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Missing", "Found"}));
-        statusInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        statusInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 statusInputActionPerformed(evt);
             }
         });
@@ -457,18 +497,23 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 81, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 {null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "PNR", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
         });
@@ -478,22 +523,28 @@ public class Counter extends javax.swing.JFrame
 
         bagageInputPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 760, 50));
 
-        Destination.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Destination.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 DestinationActionPerformed(evt);
             }
         });
         bagageInputPanel.add(Destination, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 120, -1));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField4ActionPerformed(evt);
             }
         });
         bagageInputPanel.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 40, -1));
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField9ActionPerformed(evt);
             }
         });
@@ -525,14 +576,18 @@ public class Counter extends javax.swing.JFrame
 
         discreptionpanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Discription"));
 
-        sizeInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sizeInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 sizeInputActionPerformed(evt);
             }
         });
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField5ActionPerformed(evt);
             }
         });
@@ -540,8 +595,10 @@ public class Counter extends javax.swing.JFrame
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel10.setText("Brand :");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField3ActionPerformed(evt);
             }
         });
@@ -639,8 +696,10 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(locationPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 310, -1));
         locationPanel.setVisible(false);
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField8ActionPerformed(evt);
             }
         });
@@ -654,8 +713,10 @@ public class Counter extends javax.swing.JFrame
         jLabel17.setText("-");
         bagageInputPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 10, 20));
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField10ActionPerformed(evt);
             }
         });
@@ -676,8 +737,10 @@ public class Counter extends javax.swing.JFrame
 
         jLabel15.setText("Document No.");
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField6ActionPerformed(evt);
             }
         });
@@ -690,8 +753,10 @@ public class Counter extends javax.swing.JFrame
 
         jLabel21.setText("BSN");
 
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField15.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField15ActionPerformed(evt);
             }
         });
@@ -699,22 +764,27 @@ public class Counter extends javax.swing.JFrame
         jLabel22.setText("1");
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 { new Boolean(true), null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Select", "PNR", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.Boolean.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
         });
@@ -722,8 +792,10 @@ public class Counter extends javax.swing.JFrame
 
         jLabel23.setText("Residence");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField1ActionPerformed(evt);
             }
         });
@@ -733,15 +805,19 @@ public class Counter extends javax.swing.JFrame
 
         jButton5.setText("Delete");
         jButton5.setPreferredSize(new java.awt.Dimension(71, 23));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButton5ActionPerformed(evt);
             }
         });
 
         jButton6.setText("Refresh");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButton6ActionPerformed(evt);
             }
         });
@@ -757,8 +833,10 @@ public class Counter extends javax.swing.JFrame
 
         jLabel27.setText("Date");
 
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField19.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField19ActionPerformed(evt);
             }
         });
@@ -766,8 +844,10 @@ public class Counter extends javax.swing.JFrame
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("-");
 
-        jTextField20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField20.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField20ActionPerformed(evt);
             }
         });
@@ -775,16 +855,20 @@ public class Counter extends javax.swing.JFrame
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("-");
 
-        jTextField21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField21.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField21ActionPerformed(evt);
             }
         });
 
         jLabel30.setText("mm-dd-yyyy");
 
-        jTextField22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField22.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField22ActionPerformed(evt);
             }
         });
@@ -792,8 +876,10 @@ public class Counter extends javax.swing.JFrame
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel31.setText("-");
 
-        jTextField23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField23.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField23ActionPerformed(evt);
             }
         });
@@ -801,24 +887,26 @@ public class Counter extends javax.swing.JFrame
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel32.setText("-");
 
-        jTextField24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField24.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField24ActionPerformed(evt);
             }
         });
 
         jLabel33.setText("mm-dd-yyyy");
 
-        javax.swing.GroupLayout custemerInputPanelLayout = new javax.swing.GroupLayout(custemerInputPanel);
-        custemerInputPanel.setLayout(custemerInputPanelLayout);
-        custemerInputPanelLayout.setHorizontalGroup(
-            custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout customerInputPanelLayout = new javax.swing.GroupLayout(customerInputPanel);
+        customerInputPanel.setLayout(customerInputPanelLayout);
+        customerInputPanelLayout.setHorizontalGroup(
+            customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 820, Short.MAX_VALUE)
-            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(custemerInputPanelLayout.createSequentialGroup()
+            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(customerInputPanelLayout.createSequentialGroup()
                     .addGap(0, 46, Short.MAX_VALUE)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(31, 31, 31)
                             .addComponent(jLabel1)
                             .addGap(18, 18, 18)
@@ -827,7 +915,7 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jLabel19)
                             .addGap(4, 4, 4)
                             .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(40, 40, 40)
                             .addComponent(jLabel24)
                             .addGap(18, 18, 18)
@@ -836,7 +924,7 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jLabel23)
                             .addGap(4, 4, 4)
                             .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(49, 49, 49)
                             .addComponent(jLabel4)
                             .addGap(18, 18, 18)
@@ -845,17 +933,17 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jLabel18)
                             .addGap(4, 4, 4)
                             .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(34, 34, 34)
                             .addComponent(jLabel3)
                             .addGap(18, 18, 18)
                             .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(461, 461, 461)
                             .addComponent(jLabel20)
                             .addGap(18, 18, 18)
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(36, 36, 36)
                             .addComponent(jLabel7)
                             .addGap(11, 11, 11)
@@ -868,12 +956,12 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(0, 0, 0)
                             .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(customerInputPanelLayout.createSequentialGroup()
                                     .addGap(10, 10, 10)
                                     .addComponent(jLabel30))
                                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(34, 34, 34)
                             .addComponent(jLabel14)
                             .addGap(10, 10, 10)
@@ -882,7 +970,7 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jLabel25)
                             .addGap(18, 18, 18)
                             .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(31, 31, 31)
                             .addComponent(jLabel15)
                             .addGap(10, 10, 10)
@@ -891,7 +979,7 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jLabel26)
                             .addGap(18, 18, 18)
                             .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(73, 73, 73)
                             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(4, 4, 4)
@@ -911,7 +999,7 @@ public class Counter extends javax.swing.JFrame
                             .addGap(10, 10, 10)
                             .addComponent(jLabel33))
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(313, 313, 313)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(26, 26, 26)
@@ -922,53 +1010,53 @@ public class Counter extends javax.swing.JFrame
                             .addComponent(jButton6)))
                     .addGap(0, 47, Short.MAX_VALUE)))
         );
-        custemerInputPanelLayout.setVerticalGroup(
-            custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        customerInputPanelLayout.setVerticalGroup(
+            customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 600, Short.MAX_VALUE)
-            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(custemerInputPanelLayout.createSequentialGroup()
+            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(customerInputPanelLayout.createSequentialGroup()
                     .addGap(0, 67, Short.MAX_VALUE)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
-                            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel1)
                                 .addComponent(jLabel22)
                                 .addComponent(jLabel19))))
                     .addGap(6, 6, 6)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
-                            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel24)
                                 .addComponent(jLabel23))))
                     .addGap(6, 6, 6)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
-                            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel4)
                                 .addComponent(jLabel18))))
                     .addGap(6, 6, 6)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
                             .addComponent(jLabel3))
                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(4, 4, 4)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
                             .addComponent(jLabel20))
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(6, 6, 6)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
                             .addComponent(jLabel7))
                         .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -979,54 +1067,54 @@ public class Counter extends javax.swing.JFrame
                         .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel12))
                     .addGap(11, 11, 11)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
-                            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel14)
                                 .addComponent(jLabel25))))
                     .addGap(6, 6, 6)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
-                            .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel15)
                                 .addComponent(jLabel26))))
                     .addGap(6, 6, 6)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
                             .addComponent(jLabel21))
                         .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(3, 3, 3)
                             .addComponent(jLabel27))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(7, 7, 7)
                             .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(7, 7, 7)
                             .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(7, 7, 7)
                             .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(7, 7, 7)
                             .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(7, 7, 7)
                             .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(custemerInputPanelLayout.createSequentialGroup()
+                        .addGroup(customerInputPanelLayout.createSequentialGroup()
                             .addGap(7, 7, 7)
                             .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGap(80, 80, 80)
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(15, 15, 15)
-                    .addGroup(custemerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1034,14 +1122,15 @@ public class Counter extends javax.swing.JFrame
                     .addGap(0, 67, Short.MAX_VALUE)))
         );
 
-        getContentPane().add(custemerInputPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 820, 600));
-        custemerInputPanel.setVisible(false);
+        getContentPane().add(customerInputPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 820, 600));
+        customerInputPanel.setVisible(false);
 
         bagageFoundPanel.setPreferredSize(new java.awt.Dimension(800, 600));
         bagageFoundPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FoundTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
                 {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
                 {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
@@ -1072,22 +1161,28 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean [] {
+            boolean[] canEdit = new boolean []
+            {
                 true, false, false, false, false, false
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
                 return canEdit [columnIndex];
             }
         });
@@ -1347,7 +1442,8 @@ public class Counter extends javax.swing.JFrame
         bagageMissingPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         missingTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
                 {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
                 {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
@@ -1378,22 +1474,28 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean [] {
+            boolean[] canEdit = new boolean []
+            {
                 true, false, false, false, false, false
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
                 return canEdit [columnIndex];
             }
         });
@@ -1652,81 +1754,104 @@ public class Counter extends javax.swing.JFrame
         getContentPane().add(bagageMissingPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
         bagageMissingPanel.setVisible(false);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("new password"));
+
+        savePassword.setText("Save Password");
+        savePassword.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                savePasswordActionPerformed(evt);
+            }
+        });
+
         password.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         password.setText("Password :");
 
         confirmPassword.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         confirmPassword.setText("Confirm Password :");
 
-        savePassword.setText("Save Password");
-        savePassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                savePasswordActionPerformed(evt);
-            }
-        });
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(confirmPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(passwordInput)
+                            .addComponent(confirmPasswordInput, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(222, 222, 222)
+                        .addComponent(savePassword)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(password)
+                    .addComponent(passwordInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(confirmPassword)
+                    .addComponent(confirmPasswordInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(savePassword)
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout optionsPanelLayout = new javax.swing.GroupLayout(optionsPanel);
         optionsPanel.setLayout(optionsPanelLayout);
         optionsPanelLayout.setHorizontalGroup(
             optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(optionsPanelLayout.createSequentialGroup()
-                .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(optionsPanelLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(confirmPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
-                            .addComponent(password, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(passwordInput, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                            .addComponent(confirmPasswordInput)))
-                    .addGroup(optionsPanelLayout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(savePassword)))
-                .addContainerGap(445, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(423, Short.MAX_VALUE))
         );
         optionsPanelLayout.setVerticalGroup(
             optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(optionsPanelLayout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(password)
-                    .addComponent(passwordInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(confirmPassword)
-                    .addComponent(confirmPasswordInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(savePassword)
-                .addContainerGap(435, Short.MAX_VALUE))
+                .addGap(24, 24, 24)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(417, Short.MAX_VALUE))
         );
 
         getContentPane().add(optionsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
         optionsPanel.setVisible(false);
 
-        custemerPanel.setPreferredSize(new java.awt.Dimension(800, 600));
-        custemerPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        customerPanel.setPreferredSize(new java.awt.Dimension(800, 600));
+        customerPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LastCustemer.setText("Last");
-        custemerPanel.add(LastCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, -1, 20));
+        customerPanel.add(LastCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, -1, 20));
 
         NextCustemer.setText("Next");
-        custemerPanel.add(NextCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 500, -1, 20));
+        customerPanel.add(NextCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 500, -1, 20));
 
         currentPageCustemer.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         currentPageCustemer.setText("1");
-        currentPageCustemer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        currentPageCustemer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 currentPageCustemerActionPerformed(evt);
             }
         });
-        custemerPanel.add(currentPageCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 30, -1));
+        customerPanel.add(currentPageCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 30, -1));
 
         PrevCustemer.setText("Prev");
-        custemerPanel.add(PrevCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, -1, 20));
+        customerPanel.add(PrevCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, -1, 20));
 
         FirstCustemer.setText("First");
-        custemerPanel.add(FirstCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 20));
+        customerPanel.add(FirstCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 20));
 
         Edit59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Edit.png"))); // NOI18N
         Edit59.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1941,10 +2066,11 @@ public class Counter extends javax.swing.JFrame
                 .addComponent(Edit83, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        custemerPanel.add(EditButtonsCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 45, -1, -1));
+        customerPanel.add(EditButtonsCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 45, -1, -1));
 
         custemersOverview.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -1975,19 +2101,50 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Customer ID", "Nationality", "First name", "Surname", "Birthday", "Document nr.", "Telephone number", "Adres", "Zipcode", "City name", "E-mail"
             }
         ));
         custemersOverview.setRowHeight(15);
         jScrollPane8.setViewportView(custemersOverview);
 
-        custemerPanel.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 740, 470));
+        customerPanel.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 740, 470));
 
-        getContentPane().add(custemerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
-        bagageFoundPanel.setVisible(false);
+        getContentPane().add(customerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
+        customerPanel.setVisible(false);
+
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/CorendonLogo.png"))); // NOI18N
+
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Flower.png"))); // NOI18N
+
+        javax.swing.GroupLayout BackgroundLayout = new javax.swing.GroupLayout(Background);
+        Background.setLayout(BackgroundLayout);
+        BackgroundLayout.setHorizontalGroup(
+            BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BackgroundLayout.createSequentialGroup()
+                .addContainerGap(131, Short.MAX_VALUE)
+                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        BackgroundLayout.setVerticalGroup(
+            BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
+                .addGap(0, 200, Short.MAX_VALUE)
+                .addComponent(jLabel35))
+            .addGroup(BackgroundLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void baggageFoundMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_baggageFoundMousePressed
@@ -2020,14 +2177,14 @@ public class Counter extends javax.swing.JFrame
     {//GEN-HEADEREND:event_baggageMissingMouseClicked
         bagageMissingPanel.setVisible(true);
         bagageFoundPanel.setVisible(false);
-        custemerPanel.setVisible(false);
-        custemerInputPanel.setVisible(false);
+        customerPanel.setVisible(false);
+        customerInputPanel.setVisible(false);
         bagageInputPanel.setVisible(false);
         optionsPanel.setVisible(false);
         baggageMissing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
         baggageFound.setIcon(null);
-        custemers.setIcon(null);
-        newCustemer.setIcon(null);
+        customers.setIcon(null);
+        newCustomer.setIcon(null);
         newBagage.setIcon(null);
         options.setIcon(null);
     }//GEN-LAST:event_baggageMissingMouseClicked
@@ -2036,14 +2193,14 @@ public class Counter extends javax.swing.JFrame
     {//GEN-HEADEREND:event_baggageFoundMouseClicked
         bagageMissingPanel.setVisible(false);
         bagageFoundPanel.setVisible(true);
-        custemerPanel.setVisible(false);
-        custemerInputPanel.setVisible(false);
+        customerPanel.setVisible(false);
+        customerInputPanel.setVisible(false);
         bagageInputPanel.setVisible(false);
         optionsPanel.setVisible(false);
         baggageFound.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
         baggageMissing.setIcon(null);
-        custemers.setIcon(null);
-        newCustemer.setIcon(null);
+        customers.setIcon(null);
+        newCustomer.setIcon(null);
         newBagage.setIcon(null);
         options.setIcon(null);
     }//GEN-LAST:event_baggageFoundMouseClicked
@@ -2168,14 +2325,14 @@ public class Counter extends javax.swing.JFrame
     {//GEN-HEADEREND:event_optionsMouseClicked
         bagageMissingPanel.setVisible(false);
         bagageFoundPanel.setVisible(false);
-        custemerPanel.setVisible(false);
-        custemerInputPanel.setVisible(false);
+        customerPanel.setVisible(false);
+        customerInputPanel.setVisible(false);
         bagageInputPanel.setVisible(false);
         optionsPanel.setVisible(true);
         baggageMissing.setIcon(null);
         baggageFound.setIcon(null);
-        custemers.setIcon(null);
-        newCustemer.setIcon(null);
+        customers.setIcon(null);
+        newCustomer.setIcon(null);
         newBagage.setIcon(null);
         options.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
     }//GEN-LAST:event_optionsMouseClicked
@@ -2190,36 +2347,36 @@ public class Counter extends javax.swing.JFrame
         options.setIcon(null);
     }//GEN-LAST:event_optionsMouseReleased
 
-    private void newCustemerMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustemerMouseClicked
-    {//GEN-HEADEREND:event_newCustemerMouseClicked
+    private void newCustomerMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustomerMouseClicked
+    {//GEN-HEADEREND:event_newCustomerMouseClicked
         bagageMissingPanel.setVisible(false);
         bagageFoundPanel.setVisible(false);
-        custemerPanel.setVisible(false);
-        custemerInputPanel.setVisible(true);
+        customerPanel.setVisible(false);
+        customerInputPanel.setVisible(true);
         bagageInputPanel.setVisible(false);
         optionsPanel.setVisible(false);
         baggageMissing.setIcon(null);
         baggageFound.setIcon(null);
-        custemers.setIcon(null);
-        newCustemer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        customers.setIcon(null);
+        newCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
         newBagage.setIcon(null);
         options.setIcon(null);
-    }//GEN-LAST:event_newCustemerMouseClicked
+    }//GEN-LAST:event_newCustomerMouseClicked
 
-    private void newCustemerMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustemerMouseExited
-    {//GEN-HEADEREND:event_newCustemerMouseExited
+    private void newCustomerMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustomerMouseExited
+    {//GEN-HEADEREND:event_newCustomerMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_newCustemerMouseExited
+    }//GEN-LAST:event_newCustomerMouseExited
 
-    private void newCustemerMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustemerMousePressed
-    {//GEN-HEADEREND:event_newCustemerMousePressed
-        newCustemer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
-    }//GEN-LAST:event_newCustemerMousePressed
+    private void newCustomerMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustomerMousePressed
+    {//GEN-HEADEREND:event_newCustomerMousePressed
+        newCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
+    }//GEN-LAST:event_newCustomerMousePressed
 
-    private void newCustemerMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustemerMouseReleased
-    {//GEN-HEADEREND:event_newCustemerMouseReleased
-        newCustemer.setIcon(null);
-    }//GEN-LAST:event_newCustemerMouseReleased
+    private void newCustomerMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_newCustomerMouseReleased
+    {//GEN-HEADEREND:event_newCustomerMouseReleased
+        newCustomer.setIcon(null);
+    }//GEN-LAST:event_newCustomerMouseReleased
 
     private void savePasswordActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_savePasswordActionPerformed
     {//GEN-HEADEREND:event_savePasswordActionPerformed
@@ -2230,14 +2387,14 @@ public class Counter extends javax.swing.JFrame
     {//GEN-HEADEREND:event_newBagageMouseClicked
         bagageMissingPanel.setVisible(false);
         bagageFoundPanel.setVisible(false);
-        custemerPanel.setVisible(false);
-        custemerInputPanel.setVisible(false);
+        customerPanel.setVisible(false);
+        customerInputPanel.setVisible(false);
         bagageInputPanel.setVisible(true);
         optionsPanel.setVisible(false);
         baggageMissing.setIcon(null);
         baggageFound.setIcon(null);
-        custemers.setIcon(null);
-        newCustemer.setIcon(null);
+        customers.setIcon(null);
+        newCustomer.setIcon(null);
         newBagage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
         options.setIcon(null);
     }//GEN-LAST:event_newBagageMouseClicked
@@ -2257,31 +2414,31 @@ public class Counter extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_currentPageCustemerActionPerformed
 
-    private void custemersMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_custemersMouseClicked
-    {//GEN-HEADEREND:event_custemersMouseClicked
+    private void customersMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_customersMouseClicked
+    {//GEN-HEADEREND:event_customersMouseClicked
         bagageMissingPanel.setVisible(false);
         bagageFoundPanel.setVisible(false);
-        custemerPanel.setVisible(true);
-        custemerInputPanel.setVisible(false);
+        customerPanel.setVisible(true);
+        customerInputPanel.setVisible(false);
         bagageInputPanel.setVisible(false);
         optionsPanel.setVisible(false);
         baggageMissing.setIcon(null);
         baggageFound.setIcon(null);
-        custemers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
-        newCustemer.setIcon(null);
+        customers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenReleased.png")));
+        newCustomer.setIcon(null);
         newBagage.setIcon(null);
         options.setIcon(null);
-    }//GEN-LAST:event_custemersMouseClicked
+    }//GEN-LAST:event_customersMouseClicked
 
-    private void custemersMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_custemersMousePressed
-    {//GEN-HEADEREND:event_custemersMousePressed
-        custemers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
-    }//GEN-LAST:event_custemersMousePressed
+    private void customersMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_customersMousePressed
+    {//GEN-HEADEREND:event_customersMousePressed
+        customers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/ButtenPressed.png")));
+    }//GEN-LAST:event_customersMousePressed
 
-    private void custemersMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_custemersMouseReleased
-    {//GEN-HEADEREND:event_custemersMouseReleased
-        custemers.setIcon(null);
-    }//GEN-LAST:event_custemersMouseReleased
+    private void customersMouseReleased(java.awt.event.MouseEvent evt)//GEN-FIRST:event_customersMouseReleased
+    {//GEN-HEADEREND:event_customersMouseReleased
+        customers.setIcon(null);
+    }//GEN-LAST:event_customersMouseReleased
 
     private void logoutButtonMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_logoutButtonMouseClicked
     {//GEN-HEADEREND:event_logoutButtonMouseClicked
@@ -2336,6 +2493,7 @@ public class Counter extends javax.swing.JFrame
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Add;
+    private javax.swing.JPanel Background;
     private javax.swing.JTextField Destination;
     private javax.swing.JLabel Edit1;
     private javax.swing.JLabel Edit10;
@@ -2454,11 +2612,11 @@ public class Counter extends javax.swing.JFrame
     private javax.swing.JTextField currentPageFound;
     private javax.swing.JTextField currentPageMissing;
     private javax.swing.JLabel custemerId;
-    private javax.swing.JPanel custemerInputPanel;
-    private javax.swing.JPanel custemerPanel;
-    private javax.swing.JLabel custemers;
     private javax.swing.JTable custemersOverview;
     private javax.swing.JTextField custmereIdInput;
+    private javax.swing.JPanel customerInputPanel;
+    private javax.swing.JPanel customerPanel;
+    private javax.swing.JLabel customers;
     private javax.swing.JPanel discreptionpanel;
     private javax.swing.JLabel flightNr;
     private javax.swing.JButton jButton1;
@@ -2495,12 +2653,15 @@ public class Counter extends javax.swing.JFrame
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -2540,7 +2701,7 @@ public class Counter extends javax.swing.JFrame
     private javax.swing.JLabel logoutButton;
     private javax.swing.JTable missingTable;
     private javax.swing.JLabel newBagage;
-    private javax.swing.JLabel newCustemer;
+    private javax.swing.JLabel newCustomer;
     private javax.swing.JLabel options;
     private javax.swing.JPanel optionsPanel;
     private javax.swing.JLabel password;

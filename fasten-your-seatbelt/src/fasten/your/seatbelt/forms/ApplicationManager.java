@@ -60,6 +60,7 @@ public class ApplicationManager extends javax.swing.JFrame
         comment = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         commentInput = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
         NextAccount = new javax.swing.JLabel();
         FirstAccount = new javax.swing.JLabel();
         PrevAccount = new javax.swing.JLabel();
@@ -71,6 +72,9 @@ public class ApplicationManager extends javax.swing.JFrame
         passwordInput1 = new javax.swing.JPasswordField();
         confirmPasswordInput = new javax.swing.JPasswordField();
         savePassword = new javax.swing.JButton();
+        Background = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -149,6 +153,13 @@ public class ApplicationManager extends javax.swing.JFrame
 
         logoutButton.setText("(Logout)");
         logoutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        logoutButton.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                logoutButtonMouseClicked(evt);
+            }
+        });
         topBar.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, -1, 30));
 
         search.setText("Search:");
@@ -207,7 +218,7 @@ public class ApplicationManager extends javax.swing.JFrame
             },
             new String []
             {
-                "Account ID", "Name", "Account Name", "Account type"
+                "Account ID", "Name", "Account Name", "Account Type"
             }
         )
         {
@@ -222,6 +233,8 @@ public class ApplicationManager extends javax.swing.JFrame
             }
         });
         jScrollPane1.setViewportView(accounts);
+
+        edit.setBorder(javax.swing.BorderFactory.createTitledBorder("Edit"));
 
         accountID.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         accountID.setText("Account ID :");
@@ -255,7 +268,7 @@ public class ApplicationManager extends javax.swing.JFrame
         });
 
         passwordConfirm.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        passwordConfirm.setText("comfirm password :");
+        passwordConfirm.setText("Comfirm Password :");
 
         accountTypeInput.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Counter assistant", "Manager", "Application manager" }));
         accountTypeInput.addActionListener(new java.awt.event.ActionListener()
@@ -267,13 +280,15 @@ public class ApplicationManager extends javax.swing.JFrame
         });
 
         accountType.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        accountType.setText("Account type :");
+        accountType.setText("Account Type :");
 
         comment.setText("Comment :");
 
         commentInput.setColumns(20);
         commentInput.setRows(5);
         jScrollPane2.setViewportView(commentInput);
+
+        jButton1.setText("Save");
 
         javax.swing.GroupLayout editLayout = new javax.swing.GroupLayout(edit);
         edit.setLayout(editLayout);
@@ -315,11 +330,15 @@ public class ApplicationManager extends javax.swing.JFrame
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(firstNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(editLayout.createSequentialGroup()
-                        .addGap(0, 34, Short.MAX_VALUE)
+                        .addGap(0, 28, Short.MAX_VALUE)
                         .addGroup(editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(comment, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
         );
         editLayout.setVerticalGroup(
             editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -356,7 +375,9 @@ public class ApplicationManager extends javax.swing.JFrame
                 .addComponent(comment)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         NextAccount.setText("Next");
@@ -399,16 +420,15 @@ public class ApplicationManager extends javax.swing.JFrame
             .addGroup(accountManagementPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(accountManagementPanelLayout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(FirstAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(PrevAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(currentPageAccount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(NextAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LastAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(accountManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(FirstAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PrevAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(currentPageAccount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NextAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LastAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
 
@@ -469,7 +489,37 @@ public class ApplicationManager extends javax.swing.JFrame
         getContentPane().add(optionsPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
         optionsPanel.setVisible(false);
 
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/CorendonLogo.png"))); // NOI18N
+
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Flower.png"))); // NOI18N
+
+        javax.swing.GroupLayout BackgroundLayout = new javax.swing.GroupLayout(Background);
+        Background.setLayout(BackgroundLayout);
+        BackgroundLayout.setHorizontalGroup(
+            BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BackgroundLayout.createSequentialGroup()
+                .addContainerGap(131, Short.MAX_VALUE)
+                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        BackgroundLayout.setVerticalGroup(
+            BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
+                .addGap(0, 200, Short.MAX_VALUE)
+                .addComponent(jLabel35))
+            .addGroup(BackgroundLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
+
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void accountManagementMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_accountManagementMouseClicked
@@ -543,6 +593,13 @@ public class ApplicationManager extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_savePasswordActionPerformed
 
+    private void logoutButtonMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_logoutButtonMouseClicked
+    {//GEN-HEADEREND:event_logoutButtonMouseClicked
+        dispose();
+        LogIn logIn = new LogIn();
+        logIn.setVisible(true);
+    }//GEN-LAST:event_logoutButtonMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -588,6 +645,7 @@ public class ApplicationManager extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Background;
     private javax.swing.JLabel FirstAccount;
     private javax.swing.JLabel LastAccount;
     private javax.swing.JLabel Logo;
@@ -612,6 +670,9 @@ public class ApplicationManager extends javax.swing.JFrame
     private javax.swing.JPanel edit;
     private javax.swing.JLabel firstName;
     private javax.swing.JTextField firstNameInput;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lastName;

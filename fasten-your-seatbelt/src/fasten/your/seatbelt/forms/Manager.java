@@ -72,6 +72,9 @@ public class Manager extends javax.swing.JFrame
         jLabel41 = new javax.swing.JLabel();
         jPanel21 = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
+        Background = new javax.swing.JPanel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -145,6 +148,13 @@ public class Manager extends javax.swing.JFrame
 
         logoutButton.setText("(Logout)");
         logoutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        logoutButton.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                logoutButtonMouseClicked(evt);
+            }
+        });
         topBar.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, -1, 30));
 
         search.setText("Search:");
@@ -462,7 +472,37 @@ public class Manager extends javax.swing.JFrame
         getContentPane().add(overviewPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
         overviewPanel.setVisible(false);
 
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/CorendonLogo.png"))); // NOI18N
+
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fasten/your/seatbelt/Images/Flower.png"))); // NOI18N
+
+        javax.swing.GroupLayout BackgroundLayout = new javax.swing.GroupLayout(Background);
+        Background.setLayout(BackgroundLayout);
+        BackgroundLayout.setHorizontalGroup(
+            BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BackgroundLayout.createSequentialGroup()
+                .addContainerGap(131, Short.MAX_VALUE)
+                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        BackgroundLayout.setVerticalGroup(
+            BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
+                .addGap(0, 200, Short.MAX_VALUE)
+                .addComponent(jLabel44))
+            .addGroup(BackgroundLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 800, 600));
+
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void managerOverviewMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_managerOverviewMouseClicked
@@ -516,6 +556,13 @@ public class Manager extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_savePasswordActionPerformed
 
+    private void logoutButtonMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_logoutButtonMouseClicked
+    {//GEN-HEADEREND:event_logoutButtonMouseClicked
+        dispose();
+        LogIn logIn = new LogIn();
+        logIn.setVisible(true);
+    }//GEN-LAST:event_logoutButtonMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -561,39 +608,17 @@ public class Manager extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Background;
     private javax.swing.JLabel Logo;
     private javax.swing.JPanel Menu;
     private javax.swing.JLabel Options;
-    private javax.swing.JTabbedPane OverviewPanel;
-    private javax.swing.JTabbedPane OverviewPanel1;
-    private javax.swing.JTabbedPane OverviewPanel2;
-    private javax.swing.JTabbedPane OverviewPanel3;
     private javax.swing.JLabel UserName;
     private javax.swing.JLabel confirmPassword;
     private javax.swing.JPasswordField confirmPasswordInput;
     private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -604,21 +629,13 @@ public class Manager extends javax.swing.JFrame
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
@@ -626,13 +643,6 @@ public class Manager extends javax.swing.JFrame
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JLabel logoutButton;
     private javax.swing.JLabel managerOverview;
     private javax.swing.JPanel optionsPanel;
