@@ -26,7 +26,8 @@ public class Counter extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         topBar = new javax.swing.JPanel();
         UserName = new javax.swing.JLabel();
@@ -49,21 +50,20 @@ public class Counter extends javax.swing.JFrame
         pnrInput = new javax.swing.JTextField();
         status = new javax.swing.JLabel();
         statusInput = new javax.swing.JComboBox();
-        Add = new javax.swing.JButton();
+        newButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        owner = new javax.swing.JTable();
         Destination = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        dateYearInput = new javax.swing.JTextField();
+        flightNrInput = new javax.swing.JTextField();
         flightNr = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        discreptionpanel = new javax.swing.JPanel();
+        refresh = new javax.swing.JButton();
+        desination = new javax.swing.JLabel();
+        dateHint = new javax.swing.JLabel();
+        delete = new javax.swing.JButton();
+        save = new javax.swing.JButton();
+        date = new javax.swing.JLabel();
+        discriptionpanel = new javax.swing.JPanel();
         sizeInput = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -74,65 +74,53 @@ public class Counter extends javax.swing.JFrame
         size = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         locationPanel = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jTextField8 = new javax.swing.JTextField();
+        location = new javax.swing.JLabel();
+        locationBox = new javax.swing.JScrollPane();
+        locationInput = new javax.swing.JTextArea();
+        dateMonthInput = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        dateDayInput = new javax.swing.JTextField();
         customerInputPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jLabel23 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jLabel24 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jLabel27 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        customerId = new javax.swing.JLabel();
+        givenName = new javax.swing.JLabel();
+        surname = new javax.swing.JLabel();
+        dateOfBirth = new javax.swing.JLabel();
+        placeOfBirth = new javax.swing.JLabel();
+        documentNr = new javax.swing.JLabel();
+        nationalityInput = new javax.swing.JTextField();
+        givenNameInput = new javax.swing.JTextField();
+        placeOfBirthInput = new javax.swing.JTextField();
+        documentNrInput = new javax.swing.JTextField();
+        zipCode = new javax.swing.JLabel();
+        Address = new javax.swing.JLabel();
+        eMail = new javax.swing.JLabel();
+        bsn = new javax.swing.JLabel();
+        adressInput = new javax.swing.JTextField();
+        zipCodeInput = new javax.swing.JTextField();
+        cityInput = new javax.swing.JTextField();
+        bsnInput = new javax.swing.JTextField();
+        customerIdOutput = new javax.swing.JLabel();
+        bagageBox = new javax.swing.JScrollPane();
+        bagageOutput = new javax.swing.JTable();
+        city = new javax.swing.JLabel();
+        eMailInput = new javax.swing.JTextField();
+        newButtonCustomer = new javax.swing.JButton();
+        deleteCustomer = new javax.swing.JButton();
+        refreshCustomer = new javax.swing.JButton();
+        saveCustomer = new javax.swing.JButton();
+        nationaility = new javax.swing.JLabel();
+        surnameInput = new javax.swing.JTextField();
+        birhtMonthInput = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
+        birthDayInput = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
-        jLabel30 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
-        jLabel31 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
-        jLabel32 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
-        jLabel33 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
+        birthYearInput = new javax.swing.JTextField();
+        birthDateHint = new javax.swing.JLabel();
+        phoneInput = new javax.swing.JTextField();
+        mobilePhoneInput = new javax.swing.JTextField();
+        phoneNumber = new javax.swing.JLabel();
+        mobilePhoneNumber = new javax.swing.JLabel();
         bagageFoundPanel = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         FoundTable = new javax.swing.JTable();
@@ -272,8 +260,10 @@ public class Counter extends javax.swing.JFrame
 
         logoutButton.setText("(Logout)");
         logoutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        logoutButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        logoutButton.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 logoutButtonMouseClicked(evt);
             }
         });
@@ -283,8 +273,10 @@ public class Counter extends javax.swing.JFrame
         topBar.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
 
         searchBar.setPreferredSize(new java.awt.Dimension(8, 20));
-        searchBar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        searchBar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 searchBarActionPerformed(evt);
             }
         });
@@ -307,17 +299,22 @@ public class Counter extends javax.swing.JFrame
         baggageMissing.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         baggageMissing.setName(""); // NOI18N
         baggageMissing.setPreferredSize(new java.awt.Dimension(100, 40));
-        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        baggageMissing.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMouseClicked(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMouseExited(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 baggageMissingMouseReleased(evt);
             }
         });
@@ -330,14 +327,18 @@ public class Counter extends javax.swing.JFrame
         baggageFound.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         baggageFound.setName(""); // NOI18N
         baggageFound.setPreferredSize(new java.awt.Dimension(100, 40));
-        baggageFound.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        baggageFound.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 baggageFoundMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 baggageFoundMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 baggageFoundMouseReleased(evt);
             }
         });
@@ -350,14 +351,18 @@ public class Counter extends javax.swing.JFrame
         customers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         customers.setName(""); // NOI18N
         customers.setPreferredSize(new java.awt.Dimension(100, 40));
-        customers.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+        customers.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 customersMousePressed(evt);
             }
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 customersMouseClicked(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 customersMouseReleased(evt);
             }
         });
@@ -370,17 +375,22 @@ public class Counter extends javax.swing.JFrame
         newCustomer.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         newCustomer.setName(""); // NOI18N
         newCustomer.setPreferredSize(new java.awt.Dimension(100, 40));
-        newCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+        newCustomer.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 newCustomerMousePressed(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
                 newCustomerMouseExited(evt);
             }
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 newCustomerMouseClicked(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 newCustomerMouseReleased(evt);
             }
         });
@@ -393,14 +403,18 @@ public class Counter extends javax.swing.JFrame
         newBagage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         newBagage.setName(""); // NOI18N
         newBagage.setPreferredSize(new java.awt.Dimension(100, 40));
-        newBagage.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        newBagage.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 newBagageMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 newBagageMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 newBagageMouseReleased(evt);
             }
         });
@@ -413,14 +427,18 @@ public class Counter extends javax.swing.JFrame
         options.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         options.setName(""); // NOI18N
         options.setPreferredSize(new java.awt.Dimension(100, 40));
-        options.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        options.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 optionsMouseClicked(evt);
             }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
                 optionsMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
+            public void mouseReleased(java.awt.event.MouseEvent evt)
+            {
                 optionsMouseReleased(evt);
             }
         });
@@ -442,8 +460,10 @@ public class Counter extends javax.swing.JFrame
         pnr.setText("PNR");
         bagageInputPanel.add(pnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
 
-        pnrInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        pnrInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 pnrInputActionPerformed(evt);
             }
         });
@@ -453,94 +473,110 @@ public class Counter extends javax.swing.JFrame
         bagageInputPanel.add(status, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, -1, -1));
 
         statusInput.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Missing", "Found"}));
-        statusInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        statusInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 statusInputActionPerformed(evt);
             }
         });
         bagageInputPanel.add(statusInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 120, -1));
 
-        Add.setText("Add");
-        Add.setPreferredSize(new java.awt.Dimension(71, 23));
-        bagageInputPanel.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 81, -1));
+        newButton.setText("New");
+        newButton.setPreferredSize(new java.awt.Dimension(71, 23));
+        bagageInputPanel.add(newButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 81, -1));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+        owner.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
                 {null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "PNR", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
         });
-        jTable1.setMinimumSize(new java.awt.Dimension(75, 18));
-        jTable1.setPreferredSize(new java.awt.Dimension(475, 18));
-        jScrollPane1.setViewportView(jTable1);
+        owner.setMinimumSize(new java.awt.Dimension(75, 18));
+        owner.setPreferredSize(new java.awt.Dimension(475, 18));
+        jScrollPane1.setViewportView(owner);
 
         bagageInputPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 760, 50));
 
-        Destination.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Destination.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 DestinationActionPerformed(evt);
             }
         });
         bagageInputPanel.add(Destination, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 120, -1));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+        dateYearInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                dateYearInputActionPerformed(evt);
             }
         });
-        bagageInputPanel.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 40, -1));
+        bagageInputPanel.add(dateYearInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 40, -1));
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+        flightNrInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                flightNrInputActionPerformed(evt);
             }
         });
-        bagageInputPanel.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 120, -1));
+        bagageInputPanel.add(flightNrInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 120, -1));
 
         flightNr.setText("Flight nr.");
         bagageInputPanel.add(flightNr, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, -1));
 
-        jButton4.setText("Refresh");
-        bagageInputPanel.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 80, -1));
+        refresh.setText("Refresh");
+        bagageInputPanel.add(refresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 80, -1));
 
-        jLabel13.setText("Destination");
-        bagageInputPanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, -1, -1));
-        bagageInputPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
+        desination.setText("Destination");
+        bagageInputPanel.add(desination, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, -1, -1));
 
-        jLabel8.setText("mm-dd-yyyy");
-        bagageInputPanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, -1, -1));
+        dateHint.setText("mm-dd-yyyy");
+        bagageInputPanel.add(dateHint, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, -1, -1));
 
-        jButton2.setText("Delete");
-        jButton2.setPreferredSize(new java.awt.Dimension(71, 23));
-        bagageInputPanel.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 73, -1));
+        delete.setText("Delete");
+        delete.setPreferredSize(new java.awt.Dimension(71, 23));
+        bagageInputPanel.add(delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 73, -1));
 
-        jButton3.setText("Save");
-        jButton3.setPreferredSize(new java.awt.Dimension(71, 23));
-        bagageInputPanel.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 82, -1));
+        save.setText("Save");
+        save.setPreferredSize(new java.awt.Dimension(71, 23));
+        bagageInputPanel.add(save, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 82, -1));
 
-        jLabel5.setText("Date");
-        bagageInputPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 37, -1));
+        date.setText("Date");
+        bagageInputPanel.add(date, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 37, -1));
 
-        discreptionpanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Discription"));
+        discriptionpanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Discription"));
 
-        sizeInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sizeInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 sizeInputActionPerformed(evt);
             }
         });
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField5ActionPerformed(evt);
             }
         });
@@ -548,8 +584,10 @@ public class Counter extends javax.swing.JFrame
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel10.setText("Brand :");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField3ActionPerformed(evt);
             }
         });
@@ -566,44 +604,44 @@ public class Counter extends javax.swing.JFrame
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText("Colour :");
 
-        javax.swing.GroupLayout discreptionpanelLayout = new javax.swing.GroupLayout(discreptionpanel);
-        discreptionpanel.setLayout(discreptionpanelLayout);
-        discreptionpanelLayout.setHorizontalGroup(
-            discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, discreptionpanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout discriptionpanelLayout = new javax.swing.GroupLayout(discriptionpanel);
+        discriptionpanel.setLayout(discriptionpanelLayout);
+        discriptionpanelLayout.setHorizontalGroup(
+            discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, discriptionpanelLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(size, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(sizeInput, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
                     .addComponent(jTextField3)
                     .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(55, 55, 55))
-            .addGroup(discreptionpanelLayout.createSequentialGroup()
+            .addGroup(discriptionpanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane4)
-                    .addGroup(discreptionpanelLayout.createSequentialGroup()
+                    .addGroup(discriptionpanelLayout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        discreptionpanelLayout.setVerticalGroup(
-            discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(discreptionpanelLayout.createSequentialGroup()
+        discriptionpanelLayout.setVerticalGroup(
+            discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(discriptionpanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sizeInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(size))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(discreptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(discriptionpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9))
                 .addGap(13, 13, 13)
@@ -613,13 +651,13 @@ public class Counter extends javax.swing.JFrame
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
-        bagageInputPanel.add(discreptionpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 270, 290));
+        bagageInputPanel.add(discriptionpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 270, 290));
 
-        jLabel11.setText("Location :");
+        location.setText("Location :");
 
-        jTextArea2.setColumns(5);
-        jTextArea2.setRows(2);
-        jScrollPane5.setViewportView(jTextArea2);
+        locationInput.setColumns(5);
+        locationInput.setRows(2);
+        locationBox.setViewportView(locationInput);
 
         javax.swing.GroupLayout locationPanelLayout = new javax.swing.GroupLayout(locationPanel);
         locationPanel.setLayout(locationPanelLayout);
@@ -629,30 +667,32 @@ public class Counter extends javax.swing.JFrame
                 .addContainerGap()
                 .addGroup(locationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(locationPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(location, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 219, Short.MAX_VALUE))
-                    .addComponent(jScrollPane5))
+                    .addComponent(locationBox))
                 .addContainerGap())
         );
         locationPanelLayout.setVerticalGroup(
             locationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(locationPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel11)
+                .addComponent(location)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(locationBox, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         bagageInputPanel.add(locationPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 310, -1));
         locationPanel.setVisible(false);
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+        dateMonthInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                dateMonthInputActionPerformed(evt);
             }
         });
-        bagageInputPanel.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 30, -1));
+        bagageInputPanel.add(dateMonthInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 30, -1));
 
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("-");
@@ -662,383 +702,196 @@ public class Counter extends javax.swing.JFrame
         jLabel17.setText("-");
         bagageInputPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 10, 20));
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+        dateDayInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                dateDayInputActionPerformed(evt);
             }
         });
-        bagageInputPanel.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 30, -1));
+        bagageInputPanel.add(dateDayInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 30, -1));
 
         getContentPane().add(bagageInputPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 810, 600));
         bagageInputPanel.setVisible(false);
 
-        jLabel1.setText("Customer ID");
+        customerInputPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setText("Given Name");
+        customerId.setText("Customer ID");
+        customerInputPanel.add(customerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 72, -1, -1));
 
-        jLabel4.setText("Surname");
+        givenName.setText("Given Name");
+        customerInputPanel.add(givenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 147, -1, -1));
 
-        jLabel7.setText("Date Of Birth");
+        surname.setText("Surname");
+        customerInputPanel.add(surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 121, -1, -1));
 
-        jLabel14.setText("Place Of Birth");
+        dateOfBirth.setText("Date Of Birth");
+        customerInputPanel.add(dateOfBirth, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 203, -1, -1));
 
-        jLabel15.setText("Document No.");
+        placeOfBirth.setText("Place Of Birth");
+        customerInputPanel.add(placeOfBirth, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 229, -1, -1));
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+        documentNr.setText("Document Nr.");
+        customerInputPanel.add(documentNr, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 255, -1, -1));
+        customerInputPanel.add(nationalityInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 92, 117, -1));
+
+        givenNameInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                givenNameInputActionPerformed(evt);
             }
         });
+        customerInputPanel.add(givenNameInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 144, 117, -1));
+        customerInputPanel.add(placeOfBirthInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 226, 117, -1));
+        customerInputPanel.add(documentNrInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 252, 117, -1));
 
-        jLabel18.setText("Zip/Code");
+        zipCode.setText("Zip/Code");
+        customerInputPanel.add(zipCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 121, -1, -1));
 
-        jLabel19.setText("Address");
+        Address.setText("Address");
+        customerInputPanel.add(Address, new org.netbeans.lib.awtextra.AbsoluteConstraints(508, 72, -1, -1));
 
-        jLabel20.setText("E-mail");
+        eMail.setText("E-mail");
+        customerInputPanel.add(eMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(519, 206, -1, -1));
 
-        jLabel21.setText("BSN");
+        bsn.setText("BSN");
+        customerInputPanel.add(bsn, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 281, 32, -1));
+        customerInputPanel.add(adressInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 66, 138, -1));
+        customerInputPanel.add(zipCodeInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 118, 138, -1));
+        customerInputPanel.add(cityInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 92, 138, -1));
 
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
+        bsnInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                bsnInputActionPerformed(evt);
             }
         });
+        customerInputPanel.add(bsnInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 278, 117, -1));
 
-        jLabel22.setText("1");
+        customerIdOutput.setText("1");
+        customerInputPanel.add(customerIdOutput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 72, 16, -1));
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                { new Boolean(true), null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+        bagageOutput.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                { new Boolean(true), null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
-            new String [] {
-                "Select", "PNR", "Status", "Customer nr.", "Date", "Description"
+            new String []
+            {
+                "Select", "PNR", "Status", "Customer nr.", "Date", "Description", "Destination", "Flight Nr"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Boolean.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+        )
+        {
+            Class[] types = new Class []
+            {
+                java.lang.Boolean.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
         });
-        jScrollPane6.setViewportView(jTable2);
+        bagageBox.setViewportView(bagageOutput);
 
-        jLabel23.setText("City");
+        customerInputPanel.add(bagageBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 710, 110));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+        city.setText("City");
+        customerInputPanel.add(city, new org.netbeans.lib.awtextra.AbsoluteConstraints(528, 95, -1, -1));
+
+        eMailInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                eMailInputActionPerformed(evt);
             }
         });
+        customerInputPanel.add(eMailInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 200, 135, -1));
 
-        jButton1.setText("Add");
-        jButton1.setPreferredSize(new java.awt.Dimension(71, 23));
+        newButtonCustomer.setText("Add");
+        newButtonCustomer.setPreferredSize(new java.awt.Dimension(71, 23));
+        customerInputPanel.add(newButtonCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 512, -1, -1));
 
-        jButton5.setText("Delete");
-        jButton5.setPreferredSize(new java.awt.Dimension(71, 23));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+        deleteCustomer.setText("Delete");
+        deleteCustomer.setPreferredSize(new java.awt.Dimension(71, 23));
+        deleteCustomer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                deleteCustomerActionPerformed(evt);
             }
         });
+        customerInputPanel.add(deleteCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 512, 75, -1));
 
-        jButton6.setText("Refresh");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+        refreshCustomer.setText("Refresh");
+        refreshCustomer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                refreshCustomerActionPerformed(evt);
             }
         });
+        customerInputPanel.add(refreshCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(678, 512, -1, -1));
 
-        jButton7.setText("Save");
-        jButton7.setPreferredSize(new java.awt.Dimension(71, 23));
+        saveCustomer.setText("Save");
+        saveCustomer.setPreferredSize(new java.awt.Dimension(71, 23));
+        customerInputPanel.add(saveCustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 512, 73, -1));
 
-        jLabel24.setText("Nationality");
+        nationaility.setText("Nationality");
+        customerInputPanel.add(nationaility, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 95, -1, -1));
+        customerInputPanel.add(surnameInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 118, 117, -1));
 
-        jLabel25.setText("Flight nr.");
-
-        jLabel26.setText("Destination");
-
-        jLabel27.setText("Date");
-
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
+        birhtMonthInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                birhtMonthInputActionPerformed(evt);
             }
         });
+        customerInputPanel.add(birhtMonthInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 200, 30, -1));
 
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("-");
+        customerInputPanel.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 10, 20));
 
-        jTextField20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField20ActionPerformed(evt);
+        birthDayInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                birthDayInputActionPerformed(evt);
             }
         });
+        customerInputPanel.add(birthDayInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 200, 30, -1));
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("-");
+        customerInputPanel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 200, 10, 20));
 
-        jTextField21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField21ActionPerformed(evt);
+        birthYearInput.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                birthYearInputActionPerformed(evt);
             }
         });
+        customerInputPanel.add(birthYearInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 200, 40, -1));
 
-        jLabel30.setText("mm-dd-yyyy");
+        birthDateHint.setText("mm-dd-yyyy");
+        customerInputPanel.add(birthDateHint, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 200, -1, 20));
+        customerInputPanel.add(phoneInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 144, 138, -1));
+        customerInputPanel.add(mobilePhoneInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 170, 138, -1));
 
-        jTextField22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField22ActionPerformed(evt);
-            }
-        });
+        phoneNumber.setText("Phone Number");
+        customerInputPanel.add(phoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 147, -1, -1));
 
-        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("-");
-
-        jTextField23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField23ActionPerformed(evt);
-            }
-        });
-
-        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setText("-");
-
-        jTextField24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField24ActionPerformed(evt);
-            }
-        });
-
-        jLabel33.setText("mm-dd-yyyy");
-
-        jLabel36.setText("Phone Number");
-
-        jLabel37.setText("Mobile Phone Number");
-
-        javax.swing.GroupLayout customerInputPanelLayout = new javax.swing.GroupLayout(customerInputPanel);
-        customerInputPanel.setLayout(customerInputPanelLayout);
-        customerInputPanelLayout.setHorizontalGroup(
-            customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerInputPanelLayout.createSequentialGroup()
-                .addContainerGap(444, Short.MAX_VALUE)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel37, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(customerInputPanelLayout.createSequentialGroup()
-                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel33))
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField26, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField25, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)))
-                .addGap(69, 69, 69))
-            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(customerInputPanelLayout.createSequentialGroup()
-                    .addGap(0, 46, Short.MAX_VALUE)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(31, 31, 31)
-                            .addComponent(jLabel1)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(40, 40, 40)
-                            .addComponent(jLabel24)
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(49, 49, 49)
-                            .addComponent(jLabel4)
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(34, 34, 34)
-                            .addComponent(jLabel3)
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(36, 36, 36)
-                            .addComponent(jLabel7)
-                            .addGap(11, 11, 11)
-                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(customerInputPanelLayout.createSequentialGroup()
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabel30))
-                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(34, 34, 34)
-                            .addComponent(jLabel14)
-                            .addGap(10, 10, 10)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(31, 31, 31)
-                            .addComponent(jLabel15)
-                            .addGap(10, 10, 10)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(73, 73, 73)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(4, 4, 4)
-                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(313, 313, 313)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(26, 26, 26)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(69, 69, 69)
-                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(29, 29, 29)
-                            .addComponent(jButton6)))
-                    .addGap(0, 47, Short.MAX_VALUE)))
-        );
-        customerInputPanelLayout.setVerticalGroup(
-            customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(customerInputPanelLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel23))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel18))
-                .addGap(1, 1, 1)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel36))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel37))
-                .addGap(13, 13, 13)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel20)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel26))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel27))
-                .addContainerGap(299, Short.MAX_VALUE))
-            .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(customerInputPanelLayout.createSequentialGroup()
-                    .addGap(3, 70, Short.MAX_VALUE)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addComponent(jLabel22))
-                    .addGap(9, 9, 9)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel24)))
-                    .addGap(6, 6, 6)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel4)))
-                    .addGap(6, 6, 6)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel3))
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(30, 30, 30)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel7))
-                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel12))
-                    .addGap(11, 11, 11)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel14)))
-                    .addGap(6, 6, 6)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel15)))
-                    .addGap(6, 6, 6)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(customerInputPanelLayout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel21))
-                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(87, 87, 87)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(15, 15, 15)
-                    .addGroup(customerInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton6))
-                    .addGap(0, 67, Short.MAX_VALUE)))
-        );
+        mobilePhoneNumber.setText("Mobile Phone Number");
+        customerInputPanel.add(mobilePhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 173, -1, -1));
 
         getContentPane().add(customerInputPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 820, 600));
         customerInputPanel.setVisible(false);
@@ -1047,7 +900,8 @@ public class Counter extends javax.swing.JFrame
         bagageFoundPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FoundTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
                 {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
                 {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
@@ -1078,22 +932,28 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean [] {
+            boolean[] canEdit = new boolean []
+            {
                 true, false, false, false, false, false
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
                 return canEdit [columnIndex];
             }
         });
@@ -1101,18 +961,16 @@ public class Counter extends javax.swing.JFrame
         FoundTable.setRequestFocusEnabled(false);
         jScrollPane3.setViewportView(FoundTable);
         FoundTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-        if (FoundTable.getColumnModel().getColumnCount() > 0) {
-            FoundTable.getColumnModel().getColumn(0).setMinWidth(40);
-            FoundTable.getColumnModel().getColumn(0).setPreferredWidth(10);
-            FoundTable.getColumnModel().getColumn(0).setMaxWidth(40);
-            FoundTable.getColumnModel().getColumn(1).setPreferredWidth(30);
-            FoundTable.getColumnModel().getColumn(2).setMinWidth(60);
-            FoundTable.getColumnModel().getColumn(2).setPreferredWidth(20);
-            FoundTable.getColumnModel().getColumn(2).setMaxWidth(60);
-            FoundTable.getColumnModel().getColumn(3).setPreferredWidth(20);
-            FoundTable.getColumnModel().getColumn(4).setPreferredWidth(20);
-            FoundTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-        }
+        FoundTable.getColumnModel().getColumn(0).setMinWidth(40);
+        FoundTable.getColumnModel().getColumn(0).setPreferredWidth(10);
+        FoundTable.getColumnModel().getColumn(0).setMaxWidth(40);
+        FoundTable.getColumnModel().getColumn(1).setPreferredWidth(30);
+        FoundTable.getColumnModel().getColumn(2).setMinWidth(60);
+        FoundTable.getColumnModel().getColumn(2).setPreferredWidth(20);
+        FoundTable.getColumnModel().getColumn(2).setMaxWidth(60);
+        FoundTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+        FoundTable.getColumnModel().getColumn(4).setPreferredWidth(20);
+        FoundTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         FoundTable.setRowHeight (15);
 
         bagageFoundPanel.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 740, 470));
@@ -1355,7 +1213,8 @@ public class Counter extends javax.swing.JFrame
         bagageMissingPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         missingTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 { new Boolean(true),  new Integer(123), "missing", "0001", "10/10/13", "Color: red, Size: Small"},
                 {null,  new Integer(456), "missing", "0002", "10/10/13", "Color: Bleu, Size: medium"},
                 {null,  new Integer(789), "missing", "0003", "10/10/13", "Color: green, Size: Large"},
@@ -1386,22 +1245,28 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Select", "Label nr.", "Status", "Customer nr.", "Date", "Description"
             }
-        ) {
-            Class[] types = new Class [] {
+        )
+        {
+            Class[] types = new Class []
+            {
                 java.lang.Boolean.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean [] {
+            boolean[] canEdit = new boolean []
+            {
                 true, false, false, false, false, false
             };
 
-            public Class getColumnClass(int columnIndex) {
+            public Class getColumnClass(int columnIndex)
+            {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
                 return canEdit [columnIndex];
             }
         });
@@ -1411,18 +1276,16 @@ public class Counter extends javax.swing.JFrame
         missingTable.setRowHeight(15);
         jScrollPane2.setViewportView(missingTable);
         missingTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-        if (missingTable.getColumnModel().getColumnCount() > 0) {
-            missingTable.getColumnModel().getColumn(0).setMinWidth(40);
-            missingTable.getColumnModel().getColumn(0).setPreferredWidth(10);
-            missingTable.getColumnModel().getColumn(0).setMaxWidth(40);
-            missingTable.getColumnModel().getColumn(1).setPreferredWidth(30);
-            missingTable.getColumnModel().getColumn(2).setMinWidth(60);
-            missingTable.getColumnModel().getColumn(2).setPreferredWidth(20);
-            missingTable.getColumnModel().getColumn(2).setMaxWidth(60);
-            missingTable.getColumnModel().getColumn(3).setPreferredWidth(20);
-            missingTable.getColumnModel().getColumn(4).setPreferredWidth(20);
-            missingTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-        }
+        missingTable.getColumnModel().getColumn(0).setMinWidth(40);
+        missingTable.getColumnModel().getColumn(0).setPreferredWidth(10);
+        missingTable.getColumnModel().getColumn(0).setMaxWidth(40);
+        missingTable.getColumnModel().getColumn(1).setPreferredWidth(30);
+        missingTable.getColumnModel().getColumn(2).setMinWidth(60);
+        missingTable.getColumnModel().getColumn(2).setPreferredWidth(20);
+        missingTable.getColumnModel().getColumn(2).setMaxWidth(60);
+        missingTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+        missingTable.getColumnModel().getColumn(4).setPreferredWidth(20);
+        missingTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         missingTable.setRowHeight (15);
         missingTable.getAccessibleContext().setAccessibleName("");
 
@@ -1665,8 +1528,10 @@ public class Counter extends javax.swing.JFrame
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("new password"));
 
         savePassword.setText("Save Password");
-        savePassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        savePassword.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 savePasswordActionPerformed(evt);
             }
         });
@@ -1744,8 +1609,10 @@ public class Counter extends javax.swing.JFrame
 
         currentPageCustemer.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         currentPageCustemer.setText("1");
-        currentPageCustemer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        currentPageCustemer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 currentPageCustemerActionPerformed(evt);
             }
         });
@@ -1973,7 +1840,8 @@ public class Counter extends javax.swing.JFrame
         customerPanel.add(EditButtonsCustemer, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 45, -1, -1));
 
         custemersOverview.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -2004,7 +1872,8 @@ public class Counter extends javax.swing.JFrame
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "Customer ID", "Nationality", "First name", "Surname", "Birthday", "Document nr.", "Telephone number", "Adres", "Zipcode", "City name", "E-mail"
             }
         ));
@@ -2133,15 +2002,15 @@ public class Counter extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_DestinationActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField4ActionPerformed
-    {//GEN-HEADEREND:event_jTextField4ActionPerformed
+    private void dateYearInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_dateYearInputActionPerformed
+    {//GEN-HEADEREND:event_dateYearInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_dateYearInputActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField9ActionPerformed
-    {//GEN-HEADEREND:event_jTextField9ActionPerformed
+    private void flightNrInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_flightNrInputActionPerformed
+    {//GEN-HEADEREND:event_flightNrInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_flightNrInputActionPerformed
 
     private void sizeInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_sizeInputActionPerformed
     {//GEN-HEADEREND:event_sizeInputActionPerformed
@@ -2158,70 +2027,55 @@ public class Counter extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField8ActionPerformed
-    {//GEN-HEADEREND:event_jTextField8ActionPerformed
+    private void dateMonthInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_dateMonthInputActionPerformed
+    {//GEN-HEADEREND:event_dateMonthInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_dateMonthInputActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField10ActionPerformed
-    {//GEN-HEADEREND:event_jTextField10ActionPerformed
+    private void dateDayInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_dateDayInputActionPerformed
+    {//GEN-HEADEREND:event_dateDayInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_dateDayInputActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField6ActionPerformed
-    {//GEN-HEADEREND:event_jTextField6ActionPerformed
+    private void givenNameInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_givenNameInputActionPerformed
+    {//GEN-HEADEREND:event_givenNameInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_givenNameInputActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField15ActionPerformed
-    {//GEN-HEADEREND:event_jTextField15ActionPerformed
+    private void bsnInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_bsnInputActionPerformed
+    {//GEN-HEADEREND:event_bsnInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_bsnInputActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField1ActionPerformed
-    {//GEN-HEADEREND:event_jTextField1ActionPerformed
+    private void eMailInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_eMailInputActionPerformed
+    {//GEN-HEADEREND:event_eMailInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_eMailInputActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton5ActionPerformed
-    {//GEN-HEADEREND:event_jButton5ActionPerformed
+    private void deleteCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_deleteCustomerActionPerformed
+    {//GEN-HEADEREND:event_deleteCustomerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_deleteCustomerActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton6ActionPerformed
-    {//GEN-HEADEREND:event_jButton6ActionPerformed
+    private void refreshCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_refreshCustomerActionPerformed
+    {//GEN-HEADEREND:event_refreshCustomerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_refreshCustomerActionPerformed
 
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField19ActionPerformed
-    {//GEN-HEADEREND:event_jTextField19ActionPerformed
+    private void birhtMonthInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_birhtMonthInputActionPerformed
+    {//GEN-HEADEREND:event_birhtMonthInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
+    }//GEN-LAST:event_birhtMonthInputActionPerformed
 
-    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField20ActionPerformed
-    {//GEN-HEADEREND:event_jTextField20ActionPerformed
+    private void birthDayInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_birthDayInputActionPerformed
+    {//GEN-HEADEREND:event_birthDayInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField20ActionPerformed
+    }//GEN-LAST:event_birthDayInputActionPerformed
 
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField21ActionPerformed
-    {//GEN-HEADEREND:event_jTextField21ActionPerformed
+    private void birthYearInputActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_birthYearInputActionPerformed
+    {//GEN-HEADEREND:event_birthYearInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
-
-    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField22ActionPerformed
-    {//GEN-HEADEREND:event_jTextField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField22ActionPerformed
-
-    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField23ActionPerformed
-    {//GEN-HEADEREND:event_jTextField23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField23ActionPerformed
-
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField24ActionPerformed
-    {//GEN-HEADEREND:event_jTextField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
+    }//GEN-LAST:event_birthYearInputActionPerformed
 
     private void optionsMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_optionsMouseClicked
     {//GEN-HEADEREND:event_optionsMouseClicked
@@ -2394,7 +2248,7 @@ public class Counter extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Add;
+    private javax.swing.JLabel Address;
     private javax.swing.JPanel Background;
     private javax.swing.JTextField Destination;
     private javax.swing.JLabel Edit1;
@@ -2503,11 +2357,22 @@ public class Counter extends javax.swing.JFrame
     private javax.swing.JLabel PrevFound;
     private javax.swing.JLabel PrevMissing;
     private javax.swing.JLabel UserName;
+    private javax.swing.JTextField adressInput;
+    private javax.swing.JScrollPane bagageBox;
     private javax.swing.JPanel bagageFoundPanel;
     private javax.swing.JPanel bagageInputPanel;
     private javax.swing.JPanel bagageMissingPanel;
+    private javax.swing.JTable bagageOutput;
     private javax.swing.JLabel baggageFound;
     private javax.swing.JLabel baggageMissing;
+    private javax.swing.JTextField birhtMonthInput;
+    private javax.swing.JLabel birthDateHint;
+    private javax.swing.JTextField birthDayInput;
+    private javax.swing.JTextField birthYearInput;
+    private javax.swing.JLabel bsn;
+    private javax.swing.JTextField bsnInput;
+    private javax.swing.JLabel city;
+    private javax.swing.JTextField cityInput;
     private javax.swing.JLabel confirmPassword;
     private javax.swing.JPasswordField confirmPasswordInput;
     private javax.swing.JTextField currentPageCustemer;
@@ -2516,104 +2381,76 @@ public class Counter extends javax.swing.JFrame
     private javax.swing.JLabel custemerId;
     private javax.swing.JTable custemersOverview;
     private javax.swing.JTextField custmereIdInput;
+    private javax.swing.JLabel customerId;
+    private javax.swing.JLabel customerIdOutput;
     private javax.swing.JPanel customerInputPanel;
     private javax.swing.JPanel customerPanel;
     private javax.swing.JLabel customers;
-    private javax.swing.JPanel discreptionpanel;
+    private javax.swing.JLabel date;
+    private javax.swing.JTextField dateDayInput;
+    private javax.swing.JLabel dateHint;
+    private javax.swing.JTextField dateMonthInput;
+    private javax.swing.JLabel dateOfBirth;
+    private javax.swing.JTextField dateYearInput;
+    private javax.swing.JButton delete;
+    private javax.swing.JButton deleteCustomer;
+    private javax.swing.JLabel desination;
+    private javax.swing.JPanel discriptionpanel;
+    private javax.swing.JLabel documentNr;
+    private javax.swing.JTextField documentNrInput;
+    private javax.swing.JLabel eMail;
+    private javax.swing.JTextField eMailInput;
     private javax.swing.JLabel flightNr;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField flightNrInput;
+    private javax.swing.JLabel givenName;
+    private javax.swing.JTextField givenNameInput;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JLabel location;
+    private javax.swing.JScrollPane locationBox;
+    private javax.swing.JTextArea locationInput;
     private javax.swing.JPanel locationPanel;
     private javax.swing.JLabel logoutButton;
     private javax.swing.JTable missingTable;
+    private javax.swing.JTextField mobilePhoneInput;
+    private javax.swing.JLabel mobilePhoneNumber;
+    private javax.swing.JLabel nationaility;
+    private javax.swing.JTextField nationalityInput;
     private javax.swing.JLabel newBagage;
+    private javax.swing.JButton newButton;
+    private javax.swing.JButton newButtonCustomer;
     private javax.swing.JLabel newCustomer;
     private javax.swing.JLabel options;
     private javax.swing.JPanel optionsPanel;
+    private javax.swing.JTable owner;
     private javax.swing.JLabel password;
     private javax.swing.JPasswordField passwordInput;
+    private javax.swing.JTextField phoneInput;
+    private javax.swing.JLabel phoneNumber;
+    private javax.swing.JLabel placeOfBirth;
+    private javax.swing.JTextField placeOfBirthInput;
     private javax.swing.JLabel pnr;
     private javax.swing.JTextField pnrInput;
+    private javax.swing.JButton refresh;
+    private javax.swing.JButton refreshCustomer;
+    private javax.swing.JButton save;
+    private javax.swing.JButton saveCustomer;
     private javax.swing.JButton savePassword;
     private javax.swing.JLabel search;
     private javax.swing.JTextField searchBar;
@@ -2621,7 +2458,11 @@ public class Counter extends javax.swing.JFrame
     private javax.swing.JTextField sizeInput;
     private javax.swing.JLabel status;
     private javax.swing.JComboBox statusInput;
+    private javax.swing.JLabel surname;
+    private javax.swing.JTextField surnameInput;
     private javax.swing.JPanel topBar;
     private javax.swing.JLabel whiteBackground;
+    private javax.swing.JLabel zipCode;
+    private javax.swing.JTextField zipCodeInput;
     // End of variables declaration//GEN-END:variables
 }
